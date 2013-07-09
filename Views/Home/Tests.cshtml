@@ -1,0 +1,23 @@
+﻿@using Sc2TutsBase.Models
+@model List<League>
+
+@{
+    ViewBag.Title = "Tests";
+}
+
+<ol id="selectable">
+    @foreach (League item in @Model)
+    {
+        <li class="ui-widget-content">@item.ToString()</li>
+    }
+</ol>
+@section scripts
+{
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    @*<script src="@Url.Content("~/Content/jquery-ui-1.10.3.custom/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js")"></script>*@
+    <script>
+        $(function () {
+            $("#selectable").selectable();
+        });
+  </script>
+}

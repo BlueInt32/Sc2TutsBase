@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/Content/css/HomeStyle.css")" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    
+	<link href="@Url.Content("~/Content/jquery-ui-1.10.3.custom/css/ui-darkness/jquery-ui-1.10.3.custom.css")" rel="stylesheet">
+</head>
+<body>	
+<div id="header">
+</div>
+	@RenderBody()
+</body>
+<script src="@Url.Content("~/Content/js/jquery-1.10.2.min.js")"></script>
+	<script src="@Url.Content("~/Content/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js")"></script>
+@RenderSection("scripts", required:false)
+</html>

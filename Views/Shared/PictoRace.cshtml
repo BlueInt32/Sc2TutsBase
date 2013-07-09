@@ -1,0 +1,18 @@
+﻿@model Sc2TutsBase.Models.Race
+@{
+    switch (@Model)
+    {
+        case Sc2TutsBase.Models.Race.Terran:
+            <img src="~/Content/img/Ticon_small.png" alt="Terran" title="Terran" class="@ViewData["imgclass"]"/>
+            break;
+        case Sc2TutsBase.Models.Race.Protoss:
+        <img src="~/Content/img/Picon_small.png"  alt="Protoss" title="Protoss" class="@ViewData["imgclass"]"/>
+            break;
+        case Sc2TutsBase.Models.Race.Zerg:
+        <img src="~/Content/img/Zicon_small.png"  alt="Zerg" title="Zerg" class="@ViewData["imgclass"]"/>
+            break;
+        default:
+            break;
+    
+    }
+}

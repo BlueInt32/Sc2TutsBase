@@ -1,0 +1,68 @@
+﻿@using Sc2TutsBase.Models
+@model TutorialListAndFilterModel
+@using Sc2TutsBase.Utils
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<form method="post">
+	<div id="filters">
+		
+		@*<div class="editor-label">
+			<span>League </span>
+			@Html.EnumDropDownListFor(model => model.LeagueFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
+			<span>Race</span>
+			@Html.EnumDropDownListFor(model => model.RaceFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
+            <span>Vs</span>
+            @Html.EnumDropDownListFor(model => model.AgainstFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
+            <span>Casteur</span>
+            @Html.EnumDropDownListFor(model => model.CasterFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
+            <input type="submit" value="Filtrer" />
+		</div>*@
+
+		@Html.JquerySelectableListFor(model => model.LeagueFilter, null)
+		@Html.JquerySelectableListFor(model => model.RaceFilter, null)
+		@Html.JquerySelectableListFor(model => model.AgainstFilter, null)
+		@Html.JquerySelectableListFor(model => model.CasterFilter, null)
+
+
+
+		<hr style="clear:both;"/>
+	</div>
+</form>
+<div id="container">
+@foreach (TutorialEntry item in Model.TutorialEntries)
+{
+	<div class="item">
+		<div class="casterdiv">@Html.Partial("PictoCaster", item.Author) @item.Author</div>
+		<img src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", item.CurrentLeague))" class="pictoleague" />
+		<h4> @item.Title - @Html.Raw(string.Format("{0}v{1}", item.Race.ToString().Substring(0, 1), item.Against.ToString().Substring(0, 1)))</h4>
+		
+		<h5>@Html.Partial("PictoRace", item.Race, new ViewDataDictionary() { { "imgclass", "pictomid" } }) vs @Html.Partial("PictoRace", item.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } })</h5>
+        
+		<p class="desc">@item.Description</p>
+		@*<a href="@item.VideoUrl" target="_blank">Visionner</a>*@
+		<a href="@item.VideoUrl" target="_blank" class="youtubethumb"></a>
+		<img class="youtubethumbimg" alt="youtubethumb" src="http://img.youtube.com/vi/@item.YoutubeId/1.jpg" />
+		
+	</div>
+}
+
+</div>
+@section scripts
+{
+		@Html.JqueryCodeForList(model => model.LeagueFilter)
+		@Html.JqueryCodeForList(model => model.RaceFilter)
+		@Html.JqueryCodeForList(model => model.AgainstFilter)
+		@Html.JqueryCodeForList(model => model.CasterFilter)
+		<script>
+		$(".actualitem").mouseover(function()
+		{
+			$(this).addClass("over");
+		}).mouseout(function()
+		{
+			$(this).removeClass("over");
+		});
+		</script>
+}

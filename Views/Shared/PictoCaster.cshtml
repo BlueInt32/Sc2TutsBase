@@ -1,0 +1,14 @@
+﻿@model Sc2TutsBase.Models.Caster
+@{
+	string casterImg="";
+    switch (@Model)
+    {
+        case Sc2TutsBase.Models.Caster.Makoz:
+		casterImg = "~/Content/img/Makoz.jpg";
+		break;
+		case Sc2TutsBase.Models.Caster.Anoss:
+		casterImg = "~/Content/img/Anoss.jpg";
+		break;
+	}
+	<img src="@Url.Content(casterImg)" alt="@Model.ToString()" title="@Model.ToString()" class="pictonormal"/>
+}
