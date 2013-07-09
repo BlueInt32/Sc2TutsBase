@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -10,11 +11,16 @@ namespace Sc2TutsBase.Utils
 {
 	public static class JquerySelectableExtensions
 	{
-		public static MvcHtmlString JquerySelectableListFor<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TEnum>> expression, object htmlAttributes)
+		public static MvcHtmlString JquerySelectableListFor<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, List<TEnum>>> expression, object htmlAttributes)
 		{
 			ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
 			IEnumerable<TEnum> values = Enum.GetValues(typeof(TEnum)).Cast<TEnum>();
-			// 
+
+
+			var type = typeof(TEnum);
+			
+
+
 
 			IEnumerable<SelectListItem> items =
 				values.Select(value => new SelectListItem
@@ -31,17 +37,20 @@ namespace Sc2TutsBase.Utils
 			sb.AppendFormat("<li class=\"ui-widget-content header\">{0}</li>", metadata.DisplayName);
 			foreach (TEnum value in values)
 			{
-				sb.AppendFormat("<li class=\"ui-widget-content actualitem\">{0}</li>", value);
+				var memInfo = type.GetMember(value.ToString());
+				var attributes = memInfo[0].GetCustomAttributes(typeof(TokenAttribute),false);
+				var token = ((TokenAttribute)attributes[0]).Token;
+				sb.AppendFormat("<li class=\"ui-widget-content actualitem {1}\" data-token='{2}'>{0}</li>", value, (metadata.Model != null && ((List<TEnum>)metadata.Model).Contains(value)) ? "ui-selected" : string.Empty, token);
 			}
 			sb.Append("</ol></div>");
 
 			return new MvcHtmlString(sb.ToString());
 		}
 
-		public static MvcHtmlString JqueryCodeForList<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TEnum>> expression)
+		public static MvcHtmlString JqueryCodeForList<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, List<TEnum>>> expression, string jsCallbackSelectedFunctionName)
 		{
 			ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
-			return new MvcHtmlString(string.Format("<script>$('#{0}').selectable({{filter: \".actualitem\"}});</script>", metadata.PropertyName));
+			return new MvcHtmlString(string.Format("$('#{0}').selectable({{filter: \".actualitem\", stop:{1}}});\n", metadata.PropertyName, jsCallbackSelectedFunctionName));
 		}
 
 	}

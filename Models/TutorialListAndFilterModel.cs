@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Web;
+using Sc2TutsBase.Utils;
 
 namespace Sc2TutsBase.Models
 {
@@ -10,16 +11,8 @@ namespace Sc2TutsBase.Models
 	{
 		public List<TutorialEntry> TutorialEntries { get; set; }
 
-		[DisplayName("Race")]
-		public Race RaceFilter { get; set; }
-		[DisplayName("Contre")]
-		public Race AgainstFilter { get; set; }
-		[DisplayName("Ligue")]
-		public League LeagueFilter { get; set; }
-		[DisplayName("Caster")]
-		public Caster CasterFilter { get; set; }
-		public string Search { get; set; }
+		public Sc2Filter Filter { set; get; }
 
-
+		
 	}
 }

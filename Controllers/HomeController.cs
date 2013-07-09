@@ -19,8 +19,21 @@ namespace Sc2TutsBase.Controllers
 
             return View(model);
         }
-        
-		public ActionResult 
+
+
+		public ActionResult Filter(string filter)
+        {
+            TutorialListAndFilterModel model = new TutorialListAndFilterModel();
+			model.Filter = new Sc2Filter(filter);
+			IEnumerable<TutorialEntry> list = TutsListSerializer.LoadTutsFromFile().AsEnumerable();
+			model.Filter.Apply(ref list);
+
+            // model.LeagueFilter = null;
+			model.TutorialEntries = list.ToList();
+
+
+            return View("Index", model);
+        }
 
 
     }

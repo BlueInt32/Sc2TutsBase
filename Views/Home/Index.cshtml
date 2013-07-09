@@ -21,10 +21,11 @@
             <input type="submit" value="Filtrer" />
 		</div>*@
 
-		@Html.JquerySelectableListFor(model => model.LeagueFilter, null)
-		@Html.JquerySelectableListFor(model => model.RaceFilter, null)
-		@Html.JquerySelectableListFor(model => model.AgainstFilter, null)
-		@Html.JquerySelectableListFor(model => model.CasterFilter, null)
+		@Html.JquerySelectableListFor(model => model.Filter.LeaguesSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.RacesSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.AgainstsSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.CastersSelected, null)
+		<div class="filteritem"><ol class="selectable"><li class="actualitem ui-widget-content doubleheight"><a id="filterlink" href="#">Filtrer</a></li></ol></div>
 
 
 
@@ -52,11 +53,34 @@
 </div>
 @section scripts
 {
-		@Html.JqueryCodeForList(model => model.LeagueFilter)
-		@Html.JqueryCodeForList(model => model.RaceFilter)
-		@Html.JqueryCodeForList(model => model.AgainstFilter)
-		@Html.JqueryCodeForList(model => model.CasterFilter)
-		<script>
+
+	<script>
+		var leagueToken = "";
+		var raceToken = "";
+		var againstToken = "";
+		var casterToken = "";
+
+		var onLeagueSelected = function (event, ui) {
+			leagueToken = $(event.target).find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			processFilterToken();
+		};
+		var onRaceSelected = function (event, ui) {
+			raceToken = $(event.target).find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			processFilterToken();
+		};
+		var onAgainstSelected = function (event, ui) {
+			againstToken = $(event.target).find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			processFilterToken();
+		};
+		var onCasterSelected = function (event, ui) {
+			casterToken = $(event.target).find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			processFilterToken();
+		};
+
+		var processFilterToken = function()
+		{
+			$("#filterlink").attr("href", "@Url.Content("~")" + "filter/" + leagueToken + "_" + raceToken + "_" + againstToken + "_" + casterToken);
+		};
 		$(".actualitem").mouseover(function()
 		{
 			$(this).addClass("over");
@@ -64,5 +88,20 @@
 		{
 			$(this).removeClass("over");
 		});
-		</script>
+
+		@Html.JqueryCodeForList(model => model.Filter.LeaguesSelected, "onLeagueSelected")
+		@Html.JqueryCodeForList(model => model.Filter.RacesSelected, "onRaceSelected")
+		@Html.JqueryCodeForList(model => model.Filter.AgainstsSelected, "onAgainstSelected")
+		@Html.JqueryCodeForList(model => model.Filter.CastersSelected, "onCasterSelected")
+
+		$(function()
+		{
+			leagueToken = $("#LeaguesSelected").find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			raceToken = $("#RacesSelected").find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			againstToken = $("#AgainstsSelected").find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			casterToken = $("#CastersSelected").find(".ui-selected").map(function(){return $(this).data("token");}).get().join("-");
+			processFilterToken();
+		});
+
+	</script>
 }

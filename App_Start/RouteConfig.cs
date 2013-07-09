@@ -12,7 +12,10 @@ namespace Sc2TutsBase
 		public static void RegisterRoutes(RouteCollection routes)
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+			routes.MapRoute(
+				name: "Filter",
+				url: "filter/{filter}",
+				defaults: new { controller = "Home", action = "Filter", filter = UrlParameter.Optional });
 			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",

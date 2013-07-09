@@ -2,6 +2,7 @@
 	background: url(../img/dark_wall.png) repeat;
 	color:#EEE;
 	font-family:Verdana;
+	outline: none;
 }
 h4 { color: #FFF;}
 a { color:#F70; }
@@ -35,9 +36,13 @@ a { color:#F70; }
 
 .selectable { list-style-type: none; margin: 0; padding: 0; }
 .selectable li { cursor:pointer;}
+.selectable li.doubleheight { height: 27px;margin: 0px!important;margin-top: 21px!important;padding-top: 8px; }
+.selectable li.doubleheight a {text-decoration:none; }
 #filters { width:100%; }
 #filters ol li.actualitem {margin: 1px; text-align:center;font-size:small;}
 #filters ol li.actualitem.over {background:#6f6453;}
+
+
 #filters ol li.header {background:#d5d5d5; text-align:center;color:#191714;}
 .selectable .ui-selecting { background: #FECA40; }
 .selectable .ui-selected { background: #F39814; color: #FFF; }
