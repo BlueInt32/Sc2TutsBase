@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sc2TutsBase.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -19,6 +20,7 @@ namespace Sc2TutsBase
 			WebApiConfig.Register(GlobalConfiguration.Configuration);
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Application["TutoList"] = TutsListSerializer.LoadTutsFromFile();
 		}
 	}
 }

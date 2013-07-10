@@ -8,24 +8,11 @@
 
 <form method="post">
 	<div id="filters">
-		
-		@*<div class="editor-label">
-			<span>League </span>
-			@Html.EnumDropDownListFor(model => model.LeagueFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
-			<span>Race</span>
-			@Html.EnumDropDownListFor(model => model.RaceFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
-            <span>Vs</span>
-            @Html.EnumDropDownListFor(model => model.AgainstFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
-            <span>Casteur</span>
-            @Html.EnumDropDownListFor(model => model.CasterFilter, new { data_placeholder="Ligue...", multiple="", @class="chzn-select"})
-            <input type="submit" value="Filtrer" />
-		</div>*@
-
 		@Html.JquerySelectableListFor(model => model.Filter.LeaguesSelected, null)
 		@Html.JquerySelectableListFor(model => model.Filter.RacesSelected, null)
 		@Html.JquerySelectableListFor(model => model.Filter.AgainstsSelected, null)
 		@Html.JquerySelectableListFor(model => model.Filter.CastersSelected, null)
-		<div class="filteritem"><ol class="selectable"><li class="actualitem ui-widget-content doubleheight"><a id="filterlink" href="#">Filtrer</a></li></ol></div>
+		<a id="filterlink" href="#">Filtrer</a>
 
 
 
@@ -81,14 +68,7 @@
 		{
 			$("#filterlink").attr("href", "@Url.Content("~")" + "filter/" + leagueToken + "_" + raceToken + "_" + againstToken + "_" + casterToken);
 		};
-		$(".actualitem").mouseover(function()
-		{
-			$(this).addClass("over");
-		}).mouseout(function()
-		{
-			$(this).removeClass("over");
-		});
-
+		    
 		@Html.JqueryCodeForList(model => model.Filter.LeaguesSelected, "onLeagueSelected")
 		@Html.JqueryCodeForList(model => model.Filter.RacesSelected, "onRaceSelected")
 		@Html.JqueryCodeForList(model => model.Filter.AgainstsSelected, "onAgainstSelected")

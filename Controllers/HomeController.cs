@@ -10,11 +10,18 @@ namespace Sc2TutsBase.Controllers
 {
     public class HomeController : Controller
     {
+        List<TutorialEntry> TutoList
+        {
+            get
+            {
+                return HttpContext.Application["TutoList"] as List<TutorialEntry>;
+            }
+        }
         public ActionResult Index()
         {
             TutorialListAndFilterModel model = new TutorialListAndFilterModel();
             // model.LeagueFilter = null;
-            model.TutorialEntries = TutsListSerializer.LoadTutsFromFile();
+            model.TutorialEntries = TutoList;
 
 
             return View(model);
@@ -25,7 +32,7 @@ namespace Sc2TutsBase.Controllers
         {
             TutorialListAndFilterModel model = new TutorialListAndFilterModel();
 			model.Filter = new Sc2Filter(filter);
-			IEnumerable<TutorialEntry> list = TutsListSerializer.LoadTutsFromFile().AsEnumerable();
+            IEnumerable<TutorialEntry> list = TutoList.AsEnumerable();
 			model.Filter.Apply(ref list);
 
             // model.LeagueFilter = null;

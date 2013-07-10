@@ -4,6 +4,7 @@
 	font-family:Verdana;
 	outline: none;
 }
+*,*:hover,*:focus,*:active { outline: 0px none !important; }
 h4 { color: #FFF;}
 a { color:#F70; }
 .item { float:left; border:1px solid #222; border-radius: 5px;  width:250px; height:163px; margin:5px; padding:7px; position:relative;
@@ -35,14 +36,14 @@ a { color:#F70; }
 .filteritem { float:left; width:82px; }
 
 .selectable { list-style-type: none; margin: 0; padding: 0; }
-.selectable li { cursor:pointer;}
-.selectable li.doubleheight { height: 27px;margin: 0px!important;margin-top: 21px!important;padding-top: 8px; }
-.selectable li.doubleheight a {text-decoration:none; }
-#filters { width:100%; }
+
+#filters { width:100%; cursor:default;outline-style: none; }
 #filters ol li.actualitem {margin: 1px; text-align:center;font-size:small;}
-#filters ol li.actualitem.over {background:#6f6453;}
+#filters ol li.actualitem.over {background:#000;}
 
 
 #filters ol li.header {background:#d5d5d5; text-align:center;color:#191714;}
 .selectable .ui-selecting { background: #FECA40; }
 .selectable .ui-selected { background: #F39814; color: #FFF; }
+
+#filterlink { display:block; float:left;font-size: small;border: 1px solid #666666;background: #000000 url("../img/ui-bg_inset-soft_25_000000_1x100.png") 50% bottom repeat-x;color: #ffffff;text-decoration: none; margin: 21px 1px 1px 1px;width: 82px;text-align:center;height: 27px;padding-top: 9px; }

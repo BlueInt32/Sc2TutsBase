@@ -15,6 +15,7 @@ namespace Sc2TutsBase.Utils
 		}
 		public Sc2Filter(string filterToken)
 		{
+            
 			string[] aFilters = filterToken.Split('_');
 
 			LeaguesSelected = aFilters[0].Split('-').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseLeague);

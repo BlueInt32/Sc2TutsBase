@@ -34,7 +34,7 @@ namespace Sc2TutsBase.Utils
 			sb.AppendFormat("<div class='filteritem'>");
 			//sb.AppendFormat("<h5>{0}</h5>", metadata.DisplayName);
 			sb.AppendFormat("<ol class=\"selectable\" id=\"{0}\">", metadata.PropertyName);
-			sb.AppendFormat("<li class=\"ui-widget-content header\">{0}</li>", metadata.DisplayName);
+			sb.AppendFormat("<li class=\"ui-widget-content header\"><a>{0}</a></li>", metadata.DisplayName);
 			foreach (TEnum value in values)
 			{
 				var memInfo = type.GetMember(value.ToString());
@@ -50,7 +50,7 @@ namespace Sc2TutsBase.Utils
 		public static MvcHtmlString JqueryCodeForList<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, List<TEnum>>> expression, string jsCallbackSelectedFunctionName)
 		{
 			ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
-			return new MvcHtmlString(string.Format("$('#{0}').selectable({{filter: \".actualitem\", stop:{1}}});\n", metadata.PropertyName, jsCallbackSelectedFunctionName));
+			return new MvcHtmlString(string.Format("$('#{0}').bind( \"mousedown\", function ( e ) {{e.metaKey = true;}} ).selectable({{filter: \".actualitem\", stop:{1}}});\n", metadata.PropertyName, jsCallbackSelectedFunctionName));
 		}
 
 	}
