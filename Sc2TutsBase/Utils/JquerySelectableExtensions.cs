@@ -11,7 +11,7 @@ namespace Sc2TutsBase.Utils
 {
 	public static class JquerySelectableExtensions
 	{
-		public static MvcHtmlString JquerySelectableListFor<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, List<TEnum>>> expression, object htmlAttributes)
+		public static MvcHtmlString JquerySelectableListFor<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, List<TEnum>>> expression, object htmlAttributes) where TEnum : IConvertible
 		{
 			ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
 			IEnumerable<TEnum> values = Enum.GetValues(typeof(TEnum)).Cast<TEnum>();
@@ -37,9 +37,7 @@ namespace Sc2TutsBase.Utils
 			sb.AppendFormat("<li class=\"ui-widget-content header\"><a>{0}</a></li>", metadata.DisplayName);
 			foreach (TEnum value in values)
 			{
-				var memInfo = type.GetMember(value.ToString());
-				var attributes = memInfo[0].GetCustomAttributes(typeof(TokenAttribute),false);
-				var token = ((TokenAttribute)attributes[0]).Token;
+                string token = Utils.EnumHelper<TEnum>.GetToken<TEnum>(value);
 				sb.AppendFormat("<li class=\"ui-widget-content actualitem {1}\" data-token='{2}'>{0}</li>", value, (metadata.Model != null && ((List<TEnum>)metadata.Model).Contains(value)) ? "ui-selected" : string.Empty, token);
 			}
 			sb.Append("</ol></div>");

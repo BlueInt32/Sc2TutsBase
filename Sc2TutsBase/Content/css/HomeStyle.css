@@ -6,26 +6,32 @@
 }
 h4 { color: #FFF;}
 a { color:#F70; }
-.item { float:left; border:1px solid #222; border-radius: 5px;  width:250px; height:163px; margin:5px; padding:7px; position:relative;
-        background: url(../img/mochaGrunge.png);
-        box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
-            -1px 2px 20px rgba(255, 255, 255, 0.6) inset; 
+.item { float: left;
+border: 1px solid #222;
+width: 250px;
+height: 163px;
+margin: 5px;
+padding: 7px;
+position: relative;
+background: url(../img/mochaGrunge.png);
+box-shadow: 4px 2px 14px 1px #000;
+background: #E91;
 }
 
 .pictosmall { max-width: 12px; }
 .pictomid { max-width: 20px; }
 .pictonormal { max-width: 32px; }
-
-.item .desc { width:123px; font-size:small;}
-.item a.youtubethumb { position: absolute;bottom: 7px;right: 7px;display:block;width:120px;height:90px;background:url(../img/playoverlay.png) 0 0 no-repeat;box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); z-index:1;}
-.item a.youtubethumb:hover {display:block;width:120px;height:90px;background:url(../img/playoverlay.png) 0 -90px no-repeat;}
+.item h4 {margin: 2px 0px 30px 0px;}
+.item a.youtubethumb { position: absolute;bottom: 7px;right: 7px;display: block;width: 117px;height: 87px;background: url(../img/playoverlay.png) 0 0 no-repeat; z-index: 1;border: 3px solid #FFF;}
+.item a.youtubethumb:hover {background:url(../img/playoverlay.png) 0 -90px no-repeat;}
 .item img.youtubethumbimg { position: absolute;bottom: 7px;right: 7px;width:120px;height:90px; z-index:0;}
-
+.item .subitem { background:#FFF; color:#000; width:180px;padding: 6px 0px 0px 3px; font-family:Consolas;font-weight: bold;}
 
 
 .item .pictoleague {position:absolute;max-width: 32px;top: 8px;right: 8px;}
 .item .casterdiv { float:left; width:46px; font-size:10px; }
-.item h5 { margin-top:22px; }
+.item h5 {margin:0; padding: 2px 2px 2px 28px;}
+.item .desc { width:111px; font-size:small;padding: 4px;}
 
 
 #editionpanel { width:600px; margin: 0px auto; }

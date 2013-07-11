@@ -124,6 +124,7 @@
     <Compile Include="Models\TutorialEntry.cs" />
     <Compile Include="Models\TutorialListAndFilterModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\EnumHelper.cs" />
     <Compile Include="Utils\JquerySelectableExtensions.cs" />
     <Compile Include="Utils\MvcExtensions.cs" />
     <Compile Include="Utils\Sc2Filter.cs" />

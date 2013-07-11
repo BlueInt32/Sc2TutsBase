@@ -20,14 +20,14 @@
 		<div class="casterdiv">@Html.Partial("PictoCaster", item.Author) @item.Author</div>
 		<img src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", item.CurrentLeague))" class="pictoleague" />
 		<h4> @item.Title - @Html.Raw(string.Format("{0}v{1}", item.Race.ToString().Substring(0, 1), item.Against.ToString().Substring(0, 1)))</h4>
-		
-		<h5>@Html.Partial("PictoRace", item.Race, new ViewDataDictionary() { { "imgclass", "pictomid" } }) vs @Html.Partial("PictoRace", item.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } })</h5>
-        
-		<p class="desc">@item.Description</p>
-		@*<a href="@item.VideoUrl" target="_blank">Visionner</a>*@
-		<a href="@item.VideoUrl" target="_blank" class="youtubethumb"></a>
-		<img class="youtubethumbimg" alt="youtubethumb" src="http://img.youtube.com/vi/@item.YoutubeId/1.jpg" />
-		
+        <div class="subitem">
+            <h5>@Html.Partial("PictoRace", item.Race, new ViewDataDictionary() { { "imgclass", "pictomid" } }) vs @Html.Partial("PictoRace", item.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } })</h5>
+
+            <p class="desc">@item.Description</p>
+            @*<a href="@item.VideoUrl" target="_blank">Visionner</a>*@
+            <a href="@item.VideoUrl" target="_blank" class="youtubethumb"></a>
+            <img class="youtubethumbimg" alt="youtubethumb" src="http://img.youtube.com/vi/@item.YoutubeId/1.jpg" />
+		</div>
 	</div>
 }
 

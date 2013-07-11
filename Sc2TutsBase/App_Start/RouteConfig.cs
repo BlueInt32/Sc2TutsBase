@@ -48,16 +48,13 @@ namespace Sc2TutsBase
 			);
 		}
 
-        public static string GetEnumsRegexPattern<TEnum>(TEnum typeEnum, ref StringBuilder enumStrBuilder)
+        public static string GetEnumsRegexPattern<TEnum>(TEnum typeEnum, ref StringBuilder enumStrBuilder) where TEnum : IConvertible
         {
             enumStrBuilder.Clear(); 
 
 			Console.WriteLine(typeof(League));
 			var regexPartLeague = Enum.GetValues(typeof(TEnum)).Cast<TEnum>().ToList();
-			List<string> tokens = (from item in regexPartLeague
-								   select typeof(TEnum).GetMember(item.ToString())
-			                       into memInfo select memInfo[0].GetCustomAttributes(typeof (TokenAttribute), false)
-			                       into attributes select ((TokenAttribute) attributes[0]).Token).ToList();
+            string tokens = Utils.EnumHelper<TEnum>.GetTokens<TEnum>("|");
 			//string.Join("|", regexPartLeague.
 			string charList = string.Join("|", tokens.ToArray());
 			return string.Format(@"(({0})?\.){{0,{1}}}({0})?", charList, regexPartLeague.Count - 1);

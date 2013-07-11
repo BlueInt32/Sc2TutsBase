@@ -20,9 +20,7 @@ namespace Sc2TutsBase.Controllers
         public ActionResult Index()
         {
             TutorialListAndFilterModel model = new TutorialListAndFilterModel();
-            // model.LeagueFilter = null;
             model.TutorialEntries = TutoList;
-			HttpRuntime.UnloadAppDomain();
 
             return View(model);
         }
@@ -35,7 +33,6 @@ namespace Sc2TutsBase.Controllers
             IEnumerable<TutorialEntry> list = TutoList.AsEnumerable();
 			model.Filter.Apply(ref list);
 
-            // model.LeagueFilter = null;
 			model.TutorialEntries = list.ToList();
 
 
