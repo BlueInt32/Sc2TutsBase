@@ -1,0 +1,93 @@
+﻿@using Sc2TutsBase.Models
+@model TutorialListAndFilterModel
+@using Sc2TutsBase.Utils
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="filters">
+	@Html.JquerySelectableListFor(model => model.Filter.LeaguesSelected, null)
+	@Html.JquerySelectableListFor(model => model.Filter.RacesSelected, null)
+	@Html.JquerySelectableListFor(model => model.Filter.AgainstsSelected, null)
+	@Html.JquerySelectableListFor(model => model.Filter.CastersSelected, null)
+	<a id="filterlink" href="#">Filtrer</a>
+</div>
+<div id="container">
+@foreach (TutorialEntry item in Model.TutorialEntries)
+{
+	<div class="item">
+		<div class="casterdiv">@Html.Partial("PictoCaster", item.Author) @item.Author</div>
+		<img src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", item.CurrentLeague))" class="pictoleague" />
+		<h4> @item.Title - @Html.Raw(string.Format("{0}v{1}", item.Race.ToString().Substring(0, 1), item.Against.ToString().Substring(0, 1)))</h4>
+		
+		<h5>@Html.Partial("PictoRace", item.Race, new ViewDataDictionary() { { "imgclass", "pictomid" } }) vs @Html.Partial("PictoRace", item.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } })</h5>
+        
+		<p class="desc">@item.Description</p>
+		@*<a href="@item.VideoUrl" target="_blank">Visionner</a>*@
+		<a href="@item.VideoUrl" target="_blank" class="youtubethumb"></a>
+		<img class="youtubethumbimg" alt="youtubethumb" src="http://img.youtube.com/vi/@item.YoutubeId/1.jpg" />
+		
+	</div>
+}
+
+</div>
+@section scripts
+{
+
+	<script>
+		var leagueToken = "";
+		var raceToken = "";
+		var againstToken = "";
+		var casterToken = "";
+		
+		var extractTokens = function(filterDiv) { return filterDiv.find(".ui-selected").map(function(){return $(this).data("token");}).get().join("."); };
+		   
+		var onLeagueSelected = function (event, ui) {
+			leagueToken = extractTokens($(event.target));
+			processFilterToken();
+			var headerLi = extractTokens($(event.target).find(".header"));
+			if(headerLi.find("span").length == 0)
+				headerLi.append("<span class='ui-icon ui-icon-circle-close'></span>");
+		};
+		var onRaceSelected = function (event, ui) {
+			raceToken = extractTokens($(event.target));
+			processFilterToken();
+		};
+		var onAgainstSelected = function (event, ui) {
+			againstToken = extractTokens($(event.target));
+			processFilterToken();
+		};
+		var onCasterSelected = function (event, ui) {
+			casterToken = extractTokens($(event.target));
+			processFilterToken();
+		};
+
+		var processFilterToken = function()
+		{
+			$("#filterlink").attr("href", "@Url.Content("~")" + "filter/" + leagueToken + "_" + raceToken + "_" + againstToken + "_" + casterToken);
+		};
+ 
+		@Html.JqueryCodeForList(model => model.Filter.LeaguesSelected, "onLeagueSelected")
+		@Html.JqueryCodeForList(model => model.Filter.RacesSelected, "onRaceSelected")
+		@Html.JqueryCodeForList(model => model.Filter.AgainstsSelected, "onAgainstSelected")
+		@Html.JqueryCodeForList(model => model.Filter.CastersSelected, "onCasterSelected")
+
+		$(function()
+		{
+			leagueToken = extractTokens($("#LeaguesSelected"));
+			raceToken = extractTokens($("#RacesSelected"));
+			againstToken = extractTokens($("#AgainstsSelected"));
+			casterToken = extractTokens($("#CastersSelected"));
+			processFilterToken();
+
+			$("li.header").click(function()
+			{
+				$(this).parent().find(".ui-selected").removeClass('ui-selected');
+				var headerSpan = $(this).parent().find(".header span").remove();
+				processFilterToken();
+			});
+		});
+
+	</script>
+}
