@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Tools;
 
 namespace Sc2TutsBase
 {
@@ -21,7 +22,19 @@ namespace Sc2TutsBase
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
             Application["TutoList"] = TutsListSerializer.LoadTutsFromFile();
-			
+
+
+            log4net.Config.XmlConfigurator.Configure();
+            Log.InfoFormat("Global.asax", "Application_Start");
+
 		}
+
+        protected void Application_Error()
+        {
+            Exception exception = Server.GetLastError();
+            HttpException httpexception = exception as HttpException;
+
+            Log.ErrorFormat("Application_Error", exception.Message);
+        }
 	}
 }

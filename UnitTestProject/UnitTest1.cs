@@ -15,7 +15,7 @@ namespace UnitTestProject
             var values = Enum.GetValues(type);
             var values2 = Enum.ToObject(type, 0);
 
-            string list = Sc2TutsBase.Utils.EnumHelper<League>.GetTokens<League>("-");
+            //string list = Sc2TutsBase.Utils.EnumHelper<League>.GetTokens<League>("-");
 
 
         }

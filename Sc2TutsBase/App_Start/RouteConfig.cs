@@ -7,7 +7,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Sc2TutsBase.App_Start;
 using System.Text;
 
 namespace Sc2TutsBase
@@ -34,8 +33,15 @@ namespace Sc2TutsBase
 			); 
             //= Enum.GetValues(typeof(League)).Cast<League>().Aggregate(string.Empty, el => el.ToString().Substring(0, 1).ToLower(), resultStr => 
 
+
+
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-			routes.MapRoute(
+            routes.MapRoute(
+                name:"404",
+                url: "404",
+                defaults: new { controller = "Error", action = "Unknown", filter = UrlParameter.Optional}
+                );
+            routes.MapRoute(
 				name: "Filter",
 				url: "filter/{filter}",
 				defaults: new { controller = "Home", action = "Filter", filter = UrlParameter.Optional },

@@ -7,6 +7,10 @@ a { color: #44C9FF; }
 .pictomid { max-width: 20px; }
 .pictonormal { max-width: 32px; }
 .item h4 { margin: 2px 0px 10px 0px; }
+
+#leftPanel h4{margin-bottom: 9px;}
+
+
 .item a.youtubethumb { position: absolute; top: 53px; right: 7px; display: block; width: 117px; height: 87px; background: url(../img/playoverlay.png) 0 0 no-repeat; z-index: 1; border: 3px solid #FFF; }
 .item a.youtubethumb:hover { background: url(../img/playoverlay.png) 0 -90px no-repeat; }
 .item img.youtubethumbimg { position: absolute; top: 53px; right: 7px; width: 120px; height: 90px; z-index: 0; }
@@ -27,7 +31,7 @@ a { color: #44C9FF; }
 
 .selectable { list-style-type: none; margin: 0; padding: 0; }
 
-#filters { width: 100%; cursor: default; outline-style: none; float: left; height: 100%; margin-bottom: 21px;}
+#filters { position:relative;width: 100%; cursor: default; outline-style: none; float: left; height: 100%; margin-bottom: 21px;}
 #filters ol { font-size: small; }
 #filters ol li.header { margin: 1px 0px 1px 1px; text-align: center; color: #191714; height: 22px; line-height: 22px; background: #000; position:relative; text-decoration:none; }
 #filters ol li.header span { position: absolute;top: 3px;right: 3px; }
@@ -37,8 +41,7 @@ a { color: #44C9FF; }
 .selectable .ui-selecting { background: #44C9FF; }
 .selectable .ui-selected { background: #00B6FF; color: #FFF; }
 
-#filterlink { display: block; float: left; background: #1F3138; color: #ffffff; text-decoration: none; margin: 24px 1px 1px 1px; width: 82px; text-align: center; height: 33px;
-padding-top: 12px; }
+#filterlink { position: absolute;top: 82px;left: 122px;display: block; float: left; background: #1F3138; color: #ffffff; text-decoration: none; margin: 24px 1px 1px 1px; width: 82px; text-align: center; height: 33px;padding-top: 12px; }
 #filterlink:hover { background:#00B6FF; }
 
 .searchbox { background: #00B6FF;border: none;height: 20px;margin-right: 1px;float: left; color:#FFF;outline:none;}
