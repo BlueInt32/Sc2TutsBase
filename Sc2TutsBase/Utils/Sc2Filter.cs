@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using Sc2TutsBase.Models;
 
@@ -15,21 +16,49 @@ namespace Sc2TutsBase.Utils
 		}
 		public Sc2Filter(string filterToken)
 		{
-            
 			string[] aFilters = filterToken.Split('_');
 
 			LeaguesSelected = aFilters[0].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseLeague);
 			RacesSelected = aFilters[1].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
 			AgainstsSelected = aFilters[2].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
 			CastersSelected = aFilters[3].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseCaster);
-
-
+			SearchText = HttpUtility.UrlDecode(aFilters[4]);
+			
 		}
+
+		//public string MatchUpReplacer(Match match)
+		//{
+			
+		//}
 
 		public void Apply(ref IEnumerable<TutorialEntry> list)
 		{
 			if (list == null)
 				throw new Exception("Faut initialiser la list avant...");
+
+			if (!string.IsNullOrWhiteSpace(SearchText))
+			{
+				SearchText = Regex.Replace(SearchText, @"(?<race>(p|t|z|P|T|Z){1})v(?<against>(p|t|z|P|T|Z){1})", delegate(Match match)
+				{
+					string x = match.ToString();
+					Race race = ParseRace(match.Groups["race"].ToString().ToLower());
+					Race against = ParseRace(match.Groups["against"].ToString().ToLower());
+					RacesSelected.Add(race);
+					AgainstsSelected.Add(against);
+					return string.Empty;
+				});
+				if (!string.IsNullOrWhiteSpace(SearchText))
+				{
+					list = list.Where
+						(t =>
+							t.Author.ToString().Contains(SearchText)
+							|| t.Description.ToString().Contains(SearchText)
+							|| t.Title.ToString().Contains(SearchText)
+						);
+				}
+			}
+
+
 			if (LeaguesSelected.Count > 0)
 				list = list.Where(t => LeaguesSelected.Contains(t.CurrentLeague));
 			if (RacesSelected.Count > 0)
@@ -38,6 +67,8 @@ namespace Sc2TutsBase.Utils
 				list = list.Where(t => AgainstsSelected.Contains(t.Against));
 			if (CastersSelected.Count > 0)
 				list = list.Where(t => CastersSelected.Contains(t.Author));
+
+			
 			return;
 		}
 
@@ -51,43 +82,19 @@ namespace Sc2TutsBase.Utils
 		public List<Caster> CastersSelected { get; set; }
 
 
-		//public League LeagueFilterEnum { get; set; }
-		//public Race RaceFilterEnum { get; set; }
-		//public Race AgainstFilterEnum { get; set; }
-		//public Caster CasterFilterEnum { get; set; }
-		//public string Search { get; set; }
-
+		public string SearchText { get; set; }
+		
 		private Race ParseRace(string tokenRace)
 		{
-			switch (tokenRace)
-			{
-				case "p":return Race.Protoss;
-				case "z":return Race.Zerg;
-				case "t":return Race.Terran;
-				default:return Race.Protoss;
-			}
+			return EnumHelper.GetEnumValueFromToken<Race>(tokenRace);
 		}
 		private Caster ParseCaster(string tokenCaster)
 		{
-			switch (tokenCaster)
-			{
-				case "m":return Caster.Makoz;
-				case "a":return Caster.Anoss;
-				default:return Caster.Makoz;
-			}
+			return EnumHelper.GetEnumValueFromToken<Caster>(tokenCaster);
 		}
 		private League ParseLeague(string tokenLeague)
 		{
-			switch (tokenLeague)
-			{
-				case "b":return League.Bronze;
-				case "s":return League.Silver;
-				case "g":return League.Gold;
-				case "p":return League.Platinum;
-				case "d":return League.Diamond;
-				case "m":return League.Master;
-				default:return League.Bronze;
-			}
+			return EnumHelper.GetEnumValueFromToken<League>(tokenLeague);
 		}
 
 	}

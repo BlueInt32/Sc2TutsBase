@@ -37,7 +37,7 @@ namespace Sc2TutsBase.Utils
 			sb.AppendFormat("<li class=\"ui-widget-content header\"><a>{0}</a></li>", metadata.DisplayName);
 			foreach (TEnum value in values)
 			{
-                string token = Utils.EnumHelper<TEnum>.GetToken<TEnum>(value);
+                string token = Utils.EnumHelper.GetToken<TEnum>(value);
 				sb.AppendFormat("<li class=\"ui-widget-content actualitem {1}\" data-token='{2}'>{0}</li>", value, (metadata.Model != null && ((List<TEnum>)metadata.Model).Contains(value)) ? "ui-selected" : string.Empty, token);
 			}
 			sb.Append("</ol></div>");
@@ -48,7 +48,7 @@ namespace Sc2TutsBase.Utils
 		public static MvcHtmlString JqueryCodeForList<TModel, TEnum>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, List<TEnum>>> expression, string jsCallbackSelectedFunctionName)
 		{
 			ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
-			return new MvcHtmlString(string.Format("$('#{0}').bind( \"mousedown\", function ( e ) {{e.metaKey = true;}} ).selectable({{filter: \".actualitem\", stop:{1} }});\n", metadata.PropertyName, jsCallbackSelectedFunctionName));
+			return new MvcHtmlString(string.Format("$('#{0}').selectable({{filter: \".actualitem\", stop:{1} }});\n", metadata.PropertyName, jsCallbackSelectedFunctionName));
 		}
 
 	}

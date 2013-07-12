@@ -29,6 +29,7 @@ namespace Sc2TutsBase
 					GetEnumsRegexPattern(Race.Protoss, ref enumStrBuilder),
 					"_",
 					GetEnumsRegexPattern(Caster.Anoss, ref enumStrBuilder),
+					@"_[a-zA-Z{0}áàâäãéèêëíìîïĩóòôöõúüîôûúùýñçÿ\s' \+]*",
 					"$"
 			); 
             //= Enum.GetValues(typeof(League)).Cast<League>().Aggregate(string.Empty, el => el.ToString().Substring(0, 1).ToLower(), resultStr => 
@@ -37,7 +38,6 @@ namespace Sc2TutsBase
 			routes.MapRoute(
 				name: "Filter",
 				url: "filter/{filter}",
-                
 				defaults: new { controller = "Home", action = "Filter", filter = UrlParameter.Optional },
 				constraints: new { filter = globalRegexPattern }
                 );
@@ -48,16 +48,12 @@ namespace Sc2TutsBase
 			);
 		}
 
-        public static string GetEnumsRegexPattern<TEnum>(TEnum typeEnum, ref StringBuilder enumStrBuilder) where TEnum : IConvertible
+        public static string GetEnumsRegexPattern<TEnum>(TEnum typeEnum, ref StringBuilder enumStrBuilder)
         {
             enumStrBuilder.Clear(); 
-
-			Console.WriteLine(typeof(League));
 			var regexPartLeague = Enum.GetValues(typeof(TEnum)).Cast<TEnum>().ToList();
-            string tokens = Utils.EnumHelper<TEnum>.GetTokens<TEnum>("|");
-			//string.Join("|", regexPartLeague.
-			string charList = string.Join("|", tokens.ToArray());
-			return string.Format(@"(({0})?\.){{0,{1}}}({0})?", charList, regexPartLeague.Count - 1);
+            string tokens = EnumHelper.GetTokens<TEnum>("|");
+			return string.Format(@"(({0})?\.){{0,{1}}}({0})?", tokens, regexPartLeague.Count - 1);
         }
 	}
 }

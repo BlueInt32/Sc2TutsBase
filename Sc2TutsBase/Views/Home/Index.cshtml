@@ -5,23 +5,33 @@
 @{
     ViewBag.Title = "Index";
 }
+@section filters
+{
+	<h4>Les filtres permettent de sélectionner les tutos adaptés</h4>
+	<div id="filters">
+		@Html.JquerySelectableListFor(model => model.Filter.LeaguesSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.RacesSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.AgainstsSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.CastersSelected, null)
+		<a id="filterlink" href="#">Filtrer</a>
+	</div>
+	<h4>Recherche</h4>
+	@Html.TextBoxFor(model => model.Filter.SearchText, new { @class="searchbox"})
+	<a href="#" id="searchLink">Go</a>
 
-<div id="filters">
-	@Html.JquerySelectableListFor(model => model.Filter.LeaguesSelected, null)
-	@Html.JquerySelectableListFor(model => model.Filter.RacesSelected, null)
-	@Html.JquerySelectableListFor(model => model.Filter.AgainstsSelected, null)
-	@Html.JquerySelectableListFor(model => model.Filter.CastersSelected, null)
-	<a id="filterlink" href="#">Filtrer</a>
-</div>
-<div id="container">
+}
+<div id="masonryContainer">
 @foreach (TutorialEntry item in Model.TutorialEntries)
 {
 	<div class="item">
 		<div class="casterdiv">@Html.Partial("PictoCaster", item.Author) @item.Author</div>
 		<img src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", item.CurrentLeague))" class="pictoleague" />
-		<h4> @item.Title - @Html.Raw(string.Format("{0}v{1}", item.Race.ToString().Substring(0, 1), item.Against.ToString().Substring(0, 1)))</h4>
-        <div class="subitem">
-            <h5>@Html.Partial("PictoRace", item.Race, new ViewDataDictionary() { { "imgclass", "pictomid" } }) vs @Html.Partial("PictoRace", item.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } })</h5>
+		<h4><div> @item.Title - @Html.Raw(string.Format("{0}v{1}", item.Race.ToString().Substring(0, 1), item.Against.ToString().Substring(0, 1)))</div>
+		<div class="matchupPicto">@Html.Partial("PictoRace", item.Race, new ViewDataDictionary() { { "imgclass", "pictomid" } }) vs @Html.Partial("PictoRace", item.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } })</div>
+		</h4>
+        
+		<div class="subitem">
+            
 
             <p class="desc">@item.Description</p>
             @*<a href="@item.VideoUrl" target="_blank">Visionner</a>*@
@@ -30,43 +40,29 @@
 		</div>
 	</div>
 }
-
 </div>
+
 @section scripts
 {
-
 	<script>
-		var leagueToken = "";
-		var raceToken = "";
-		var againstToken = "";
-		var casterToken = "";
+		var filters = new Array();
 		
-		var extractTokens = function(filterDiv) { return filterDiv.find(".ui-selected").map(function(){return $(this).data("token");}).get().join("."); };
-		   
-		var onLeagueSelected = function (event, ui) {
-			leagueToken = extractTokens($(event.target));
-			processFilterToken();
-			var headerLi = extractTokens($(event.target).find(".header"));
+		var extractSelectedTokens = function(filterDiv) { return filterDiv.find(".ui-selected").map(function(){return $(this).data("token");}).get().join("."); };
+		var processFilterLink = function()	{ $("#filterlink,#searchLink").attr("href", "@Url.Content("~")" + "filter/" + filters[0] + "_" + filters[1] + "_" + filters[2] + "_" + filters[3] + "_" + encodeURI($("#Filter_SearchText").val())); };
+		var addCloseLinkMaybe = function(filterSelector) { if($(filterSelector +" .ui-selected").length > 0) $(filterSelector +" .header").append("<span class='ui-icon ui-icon-circle-close'></span>").find("span").show(); }
+		var onFilterSelected = function(event, ui, filterIndex) 
+		{ 
+			filters[filterIndex] = extractSelectedTokens($(event.target));
+			processFilterLink();
+			var headerLi = $(event.target).find(".header");
 			if(headerLi.find("span").length == 0)
-				headerLi.append("<span class='ui-icon ui-icon-circle-close'></span>");
-		};
-		var onRaceSelected = function (event, ui) {
-			raceToken = extractTokens($(event.target));
-			processFilterToken();
-		};
-		var onAgainstSelected = function (event, ui) {
-			againstToken = extractTokens($(event.target));
-			processFilterToken();
-		};
-		var onCasterSelected = function (event, ui) {
-			casterToken = extractTokens($(event.target));
-			processFilterToken();
-		};
+				headerLi.append("<span class='ui-icon ui-icon-circle-close'></span>").find("span").hide().fadeIn(150);
+		}
+		var onLeagueSelected = function (event, ui) { onFilterSelected(event, ui, 0); };
+		var onRaceSelected = function (event, ui) {onFilterSelected(event, ui, 1); };
+		var onAgainstSelected = function (event, ui) {onFilterSelected(event, ui, 2); };
+		var onCasterSelected = function (event, ui) {onFilterSelected(event, ui, 3); };
 
-		var processFilterToken = function()
-		{
-			$("#filterlink").attr("href", "@Url.Content("~")" + "filter/" + leagueToken + "_" + raceToken + "_" + againstToken + "_" + casterToken);
-		};
  
 		@Html.JqueryCodeForList(model => model.Filter.LeaguesSelected, "onLeagueSelected")
 		@Html.JqueryCodeForList(model => model.Filter.RacesSelected, "onRaceSelected")
@@ -75,18 +71,52 @@
 
 		$(function()
 		{
-			leagueToken = extractTokens($("#LeaguesSelected"));
-			raceToken = extractTokens($("#RacesSelected"));
-			againstToken = extractTokens($("#AgainstsSelected"));
-			casterToken = extractTokens($("#CastersSelected"));
-			processFilterToken();
+			filters[0] = extractSelectedTokens($("#LeaguesSelected"));
+			addCloseLinkMaybe("#LeaguesSelected");
+			filters[1] = extractSelectedTokens($("#RacesSelected"));
+			addCloseLinkMaybe("#RacesSelected");
+			filters[2] = extractSelectedTokens($("#AgainstsSelected"));
+			addCloseLinkMaybe("#AgainstsSelected");
+			filters[3] = extractSelectedTokens($("#CastersSelected"));
+			addCloseLinkMaybe("#CastersSelected");
+
+			processFilterLink();
 
 			$("li.header").click(function()
 			{
 				$(this).parent().find(".ui-selected").removeClass('ui-selected');
 				var headerSpan = $(this).parent().find(".header span").remove();
-				processFilterToken();
+				processFilterLink();
 			});
+			$("#Filter_SearchText").keyup(function()
+			{
+				search = $(this).val();
+				processFilterLink();
+			});
+
+			$(".item").hover(function() 
+			{
+				$(this).animate({borderColor : "#44C9FF"}, 150);
+			},
+			function(){
+				$(this).animate({borderColor : "#222"}, 150); 
+			});
+
+			$(".actualitem").hover(function()
+			{
+				$(this).stop(true, true).animate({borderColor : "#3C6B7E"}, 150);
+			},
+			function(){
+				$(this).stop(true, true).animate({borderColor : "#1F3138"}, 150);
+			});
+		
+
+
+
+			$("#masonryContainer").masonry({
+				itemSelector: '.item'
+			});
+
 		});
 
 	</script>

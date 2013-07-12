@@ -21,6 +21,7 @@ namespace Sc2TutsBase
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
             Application["TutoList"] = TutsListSerializer.LoadTutsFromFile();
+			
 		}
 	}
 }

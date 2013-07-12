@@ -27,7 +27,7 @@ namespace Sc2TutsBase.Controllers
 
 
 		public ActionResult Filter(string filter)
-        {
+		{
             TutorialListAndFilterModel model = new TutorialListAndFilterModel();
 			model.Filter = new Sc2Filter(filter);
             IEnumerable<TutorialEntry> list = TutoList.AsEnumerable();

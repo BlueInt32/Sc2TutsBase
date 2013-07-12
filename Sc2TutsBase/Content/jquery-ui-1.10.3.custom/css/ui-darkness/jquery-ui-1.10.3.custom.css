@@ -800,8 +800,9 @@ body .ui-tooltip {
 	font-size: 1em;
 }
 .ui-widget-content {
-	border: 1px solid #666666;
-	background: #000000 url(images/ui-bg_inset-soft_25_000000_1x100.png) 50% bottom repeat-x;
+	/*border: 1px solid #666666;*/
+	/*background: #000000 url(images/ui-bg_inset-soft_25_000000_1x100.png) 50% bottom repeat-x;*/
+	background: #1F3138;
 	color: #ffffff;
 }
 .ui-widget-content a {
