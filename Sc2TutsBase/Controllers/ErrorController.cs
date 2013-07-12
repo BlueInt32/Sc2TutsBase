@@ -8,9 +8,6 @@ namespace Sc2TutsBase.Controllers
 {
     public class ErrorController : Controller
     {
-        //
-        // GET: /Error/
-
         public ActionResult Unknown()
         {
             Response.StatusCode = 404;

@@ -19,7 +19,6 @@ namespace Sc2TutsBase.Controllers
         }
         public ActionResult Index()
         {
-            throw new Exception("Batard.");
             TutorialListAndFilterModel model = new TutorialListAndFilterModel();
             model.TutorialEntries = TutoList;
 
