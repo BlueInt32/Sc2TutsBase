@@ -17,12 +17,12 @@ namespace Sc2TutsBase.Utils
 		public Sc2Filter(string filterToken)
 		{
 			string[] aFilters = filterToken.Split('_');
-
+			//DisplayModeSelected = aFilters[0] == "l" ? DisplayMode.List : DisplayMode.Details;
 			LeaguesSelected = aFilters[0].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseLeague);
 			RacesSelected = aFilters[1].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
 			AgainstsSelected = aFilters[2].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
 			CastersSelected = aFilters[3].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseCaster);
-			SearchText = HttpUtility.UrlDecode(aFilters[4]);
+			SearchText = HttpUtility.UrlDecode(aFilters[4]).ToLower();
 			
 		}
 
@@ -51,9 +51,9 @@ namespace Sc2TutsBase.Utils
 				{
 					list = list.Where
 						(t =>
-							t.Author.ToString().Contains(SearchText)
-							|| t.Description.ToString().Contains(SearchText)
-							|| t.Title.ToString().Contains(SearchText)
+							t.Author.ToString().ToLower().Contains(SearchText)
+							|| t.Description.ToString().ToLower().Contains(SearchText)
+							|| t.Title.ToString().ToLower().Contains(SearchText)
 						);
 				}
 			}
@@ -71,6 +71,8 @@ namespace Sc2TutsBase.Utils
 			
 			return;
 		}
+
+		public DisplayMode DisplayModeSelected { get; set; }
 
 		[DisplayName("Ligue")]
 		public List<League> LeaguesSelected { get; set; }

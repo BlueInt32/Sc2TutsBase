@@ -20,7 +20,7 @@ namespace Sc2TutsBase
 
 
              string globalRegexPattern = string.Concat(
-					"^",
+					"^(",
 					GetEnumsRegexPattern(League.Bronze, ref enumStrBuilder),
 					"_",
 					GetEnumsRegexPattern(Race.Protoss, ref enumStrBuilder),
@@ -28,7 +28,7 @@ namespace Sc2TutsBase
 					GetEnumsRegexPattern(Race.Protoss, ref enumStrBuilder),
 					"_",
 					GetEnumsRegexPattern(Caster.Anoss, ref enumStrBuilder),
-					@"_[a-zA-Z{0}áàâäãéèêëíìîïĩóòôöõúüîôûúùýñçÿ\s' \+]*",
+					@"_[a-zA-Z0-9{0}áàâäãéèêëíìîïĩóòôöõúüîôûúùýñçÿ\s' \+]*)?",
 					"$"
 			); 
             //= Enum.GetValues(typeof(League)).Cast<League>().Aggregate(string.Empty, el => el.ToString().Substring(0, 1).ToLower(), resultStr => 
@@ -36,6 +36,12 @@ namespace Sc2TutsBase
 
 
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+				routes.MapRoute(
+                name:"SwitchDisplayMode",
+                url: "switch/{mode}",
+				defaults: new { controller = "Home", action = "SwitchDisplayMode", mode = UrlParameter.Optional },
+				constraints: new { mode = @"(l|d){0,1}" }
+                );
             routes.MapRoute(
                 name:"404",
                 url: "404",

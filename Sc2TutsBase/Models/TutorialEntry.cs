@@ -21,5 +21,15 @@ namespace Sc2TutsBase.Models
 		public string StartTiming { get; set; }
 
 		public Caster Author { get; set; }
+
+		[XmlIgnore]
+		public DateTime CreationDate { get; set; }
+
+		[XmlElement("CreationDate")]
+		public string CreationDateString
+		{
+			get { return CreationDate.ToString("dd/MM/yyyy HH:mm:ss"); }
+			set { CreationDate = DateTime.Parse(value); }
+		}
 	}
 }

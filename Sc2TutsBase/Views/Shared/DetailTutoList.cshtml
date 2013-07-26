@@ -1,0 +1,8 @@
+﻿@using Sc2TutsBase.Models
+@model List<TutorialEntry>
+<ul id="detailListContainer">
+@foreach (TutorialEntry item in Model)
+{
+	@Html.Partial("DetailTutorialEntry", item)
+}
+</ul>

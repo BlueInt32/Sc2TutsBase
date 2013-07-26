@@ -1,8 +1,14 @@
 ﻿body { background: url(../img/dark_wall.png) repeat; color: #EEE; font-family: Verdana; outline: none; }
 h4 { color: #FFF; }
-a { color: #44C9FF; }
-.item { float: left; border: 1px solid #222; width: 250px; /*height: 163px;*/ margin: 5px; padding: 7px; position: relative; background: url(../img/mochaGrunge.png); box-shadow: 4px 2px 14px 1px #000; background: url(../img/tile_bg.jpg) 0 0 repeat-x; }
+/*a:hover { text-decoration:none; } 
+a:not(.staticLink) {background: #1F3138; color: #ffffff; text-decoration: none; text-align: center;  }
+a:not(.staticLink):hover { background:#00B6FF; color:#FFF;text-decoration:none; }
+*/
 
+a.e404 { display: block;margin: 10px 1px 1px 1px;width: 105px;padding:3px; }
+a#bigIntro { display: block;margin: 10px 1px 1px 1px; width: 144px;padding: 10px;}
+a.listTuto{ display: block; color:#fff; margin-bottom:1px;background: #1F3138;  text-align:left; border: 1px solid #222;height: 51px;}
+/*a.listTuto:hover { background: #1F3138;border:1px solid #00B6FF; }*/
 .pictosmall { max-width: 12px; }
 .pictomid { max-width: 20px; }
 .pictonormal { max-width: 32px; }
@@ -10,17 +16,37 @@ a { color: #44C9FF; }
 
 #leftPanel h4{margin-bottom: 9px;}
 
-
+/* Liste des items */
+.item { float: left; border: 1px solid #222; width: 250px; /*height: 163px;*/ margin: 5px; padding: 7px; position: relative; background: url(../img/mochaGrunge.png); box-shadow: 4px 2px 14px 1px #000; background: url(../img/tile_bg.jpg) 0 0 repeat-x; }
 .item a.youtubethumb { position: absolute; top: 53px; right: 7px; display: block; width: 117px; height: 87px; background: url(../img/playoverlay.png) 0 0 no-repeat; z-index: 1; border: 3px solid #FFF; }
 .item a.youtubethumb:hover { background: url(../img/playoverlay.png) 0 -90px no-repeat; }
 .item img.youtubethumbimg { position: absolute; top: 53px; right: 7px; width: 120px; height: 90px; z-index: 0; }
 .item .subitem { background: #FFF; color: #000; width: 180px; padding: 6px 0px 0px 3px; font-family: Consolas; font-weight: bold; /*max-height: 105px;*/min-height: 76px; }
 
 
+#displayChoice { height:20px; }
+#displayChoice a { float:left; background:#000; margin:2px;}
+a#listIcon{ background-image:url(../img/266056_sprite.png); }
+a#detailIcon { background-image:url(../img/266057_sprite.png); }   
+#displayChoice a#listIcon { display:block; width:14px; height:11px; background-position:0 -11px;}
+#displayChoice a#listIcon.active {  background-position:0 0;}
+#displayChoice a#detailIcon { display:block; width:14px; height:11px;  background-position:0 -11px;}
+#displayChoice a#detailIcon.active { background-position:0 0;}
+
+ul#detailListContainer { list-style: none; padding: 0px;}
+ul#detailListContainer li{  height: 53px;line-height: 53px;margin-bottom: 1px;}
+ul#detailListContainer li .listTuto span{ float:left; }
+ul#detailListContainer li .listTuto span:nth-child(1) { font-weight: bold;width: 150px;padding-left: 20px;}
+ul#detailListContainer li .listTuto span:nth-child(2) { width: 100px;}
+ul#detailListContainer li .listTuto span:nth-child(3) {width: 120px; font-size: smaller;}
+ul#detailListContainer li .listTuto span:nth-child(4) { width:40px; }
+ul#detailListContainer li .listTuto span:nth-child(5) { overflow:hidden; word-wrap:break-word;}
+
+
 .item .pictoleague { position: absolute; max-width: 32px; top: 8px; right: 8px; }
 .item .casterdiv { float: left; width: 46px; font-size: 10px; }
 .item .matchupPicto { margin: 0; padding: 2px 2px 2px 28px; }
-.item .desc { width: 111px; font-size: small; padding: 4px; margin: 0px 0px 0px 0px; }
+.item .desc { width: 111px; font-size: small; padding: 4px; margin: 0px 0px 0px 0px; overflow: hidden;}
 
 
 #editionpanel { width: 600px; margin: 0px auto; }
@@ -41,7 +67,7 @@ a { color: #44C9FF; }
 .selectable .ui-selecting { background: #44C9FF; }
 .selectable .ui-selected { background: #00B6FF; color: #FFF; }
 
-#filterlink { position: absolute;top: 82px;left: 122px;display: block; float: left; background: #1F3138; color: #ffffff; text-decoration: none; margin: 24px 1px 1px 1px; width: 82px; text-align: center; height: 33px;padding-top: 12px; }
+#filterlink { position: absolute;top: 82px;left: 122px;float: left;display: block;  background: #1F3138; color: #ffffff; text-decoration: none; margin: 24px 1px 1px 1px; width: 82px; text-align: center; height: 33px;padding-top: 12px; }
 #filterlink:hover { background:#00B6FF; }
 
 .searchbox { background: #00B6FF;border: none;height: 20px;margin-right: 1px;float: left; color:#FFF;outline:none;}

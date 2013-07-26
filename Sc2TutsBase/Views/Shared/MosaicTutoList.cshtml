@@ -1,0 +1,8 @@
+﻿@using Sc2TutsBase.Models
+@model List<TutorialEntry>
+<div id="masonryContainer">
+@foreach (TutorialEntry item in Model)
+{
+	@Html.Partial("MosaicTutorialEntry", item)
+}
+</div>

@@ -1,0 +1,125 @@
+﻿@using Sc2TutsBase.Models
+@model TutorialListAndFilterModel
+@using Sc2TutsBase.Utils
+
+@{
+	ViewBag.Title = "SC2TutsBase";
+}
+@section filters
+{
+	<h4>Modules de filtres</h4>
+	<div id="filters">
+		@Html.JquerySelectableListFor(model => model.Filter.LeaguesSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.RacesSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.AgainstsSelected, null)
+		@Html.JquerySelectableListFor(model => model.Filter.CastersSelected, null)
+
+		<a id="filterlink" href="#">Filtrer</a>
+	</div>
+	<h4>Recherche</h4>
+	@Html.TextBoxFor(model => model.Filter.SearchText, new { @class = "searchbox" })
+	<a href="#" id="searchLink">Go</a>
+
+}
+
+<h3>Résultats</h3>
+<div>
+	<div id="displayChoice">
+		<a href="@Url.Action("SwitchDisplayMode", new { mode = "l" })" id="listIcon" @Html.Raw(Model.TutoListViewType == TutoListViewType.List ? "class='active'" : "")></a>
+		<a href="@Url.Action("SwitchDisplayMode", new { mode = "m" })" id="detailIcon" @Html.Raw(Model.TutoListViewType == TutoListViewType.Mosaic ? "class='active'" : "")></a>
+	</div>
+</div>
+@if (Model.ShowList)
+{
+	switch (Model.TutoListViewType)
+	{
+		case TutoListViewType.List:@Html.Partial("DetailTutoList", Model.TutorialEntries)
+						  break;
+		case TutoListViewType.Mosaic:@Html.Partial("MosaicTutoList", Model.TutorialEntries)
+						  break;
+	}
+}
+else
+{
+	<p>@Model.PotentialMessage</p>
+}
+</div>
+@section scripts
+{
+	<script>
+
+	/* Filters */
+		var filters = new Array();
+
+		var extractSelectedTokens = function (filterDiv) { return filterDiv.find(".ui-selected").map(function () { return $(this).data("token"); }).get().join("."); };
+		var processFilterLink = function () 
+		{ 
+			var filtersItemsStr = $(filters).get().join("_");
+			$("#filterlink,#searchLink").attr("href", "@Url.Content("~")" + "filter/" + filtersItemsStr); 
+		};
+		var addCloseLinkMaybe = function (filterSelector) { if ($(filterSelector + " .ui-selected").length > 0) $(filterSelector + " .header").append("<span class='ui-icon ui-icon-circle-close'></span>").find("span").show(); }
+		var onFilterSelected = function (event, ui, filterIndex) {
+			filters[filterIndex] = extractSelectedTokens($(event.target));
+			processFilterLink();
+			var headerLi = $(event.target).find(".header");
+			if (headerLi.find("span").length == 0)
+				headerLi.append("<span class='ui-icon ui-icon-circle-close'></span>").find("span").hide().fadeIn(150);
+		}
+		var onLeagueSelected = function (event, ui) { onFilterSelected(event, ui, 0); };
+		var onRaceSelected = function (event, ui) { onFilterSelected(event, ui, 1); };
+		var onAgainstSelected = function (event, ui) { onFilterSelected(event, ui, 2); };
+		var onCasterSelected = function (event, ui) { onFilterSelected(event, ui, 3); };
+
+
+		@Html.JqueryCodeForList(model => model.Filter.LeaguesSelected, "onLeagueSelected")
+		@Html.JqueryCodeForList(model => model.Filter.RacesSelected, "onRaceSelected")
+		@Html.JqueryCodeForList(model => model.Filter.AgainstsSelected, "onAgainstSelected")
+		@Html.JqueryCodeForList(model => model.Filter.CastersSelected, "onCasterSelected")
+
+		$(function () {
+			filters[0] = extractSelectedTokens($("#LeaguesSelected"));
+			addCloseLinkMaybe("#LeaguesSelected");
+			filters[1] = extractSelectedTokens($("#RacesSelected"));
+			addCloseLinkMaybe("#RacesSelected");
+			filters[2] = extractSelectedTokens($("#AgainstsSelected"));
+			addCloseLinkMaybe("#AgainstsSelected");
+			filters[3] = extractSelectedTokens($("#CastersSelected"));
+			addCloseLinkMaybe("#CastersSelected");
+			filters[4] = $("#Filter_SearchText").val();
+			processFilterLink();
+
+			$("li.header").click(function () {
+				$(this).parent().find(".ui-selected").removeClass('ui-selected');
+				var headerSpan = $(this).parent().find(".header span").remove();
+				processFilterLink();
+			});
+			$("#Filter_SearchText").keyup(function () {
+				filters[4] = encodeURI($(this).val());
+				processFilterLink();
+			});
+
+			$(".item,.itemLi a").hover(function () {
+				$(this).stop(true, true).animate({ borderColor: "#44C9FF" }, 150);
+			},
+			function () {
+				$(this).stop(true, true).animate({ borderColor: "#222" }, 150);
+			});
+
+			$(".actualitem").hover(function () {
+				$(this).stop(true, true).animate({ borderColor: "#3C6B7E" }, 150);
+			},
+			function () {
+				$(this).stop(true, true).animate({ borderColor: "#1F3138" }, 150);
+			});
+
+
+
+
+			$("#masonryContainer").masonry({
+				itemSelector: '.item'
+			});
+
+		});
+
+	</script>
+}

@@ -9,10 +9,13 @@ namespace Sc2TutsBase.Models
 {
 	public class TutorialListAndFilterModel
 	{
-		public List<TutorialEntry> TutorialEntries { get; set; }
+        public TutoListViewType TutoListViewType { get; set; }
 
+		public List<TutorialEntry> TutorialEntries { get; set; }
+		public string PotentialMessage { get; set; }
 		public Sc2Filter Filter { set; get; }
 
+		public bool ShowList { get; set; }
 		
 	}
 }

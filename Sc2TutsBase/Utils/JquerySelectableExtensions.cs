@@ -16,12 +16,7 @@ namespace Sc2TutsBase.Utils
 			ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
 			IEnumerable<TEnum> values = Enum.GetValues(typeof(TEnum)).Cast<TEnum>();
 
-
 			var type = typeof(TEnum);
-			
-
-
-
 			IEnumerable<SelectListItem> items =
 				values.Select(value => new SelectListItem
 				{
@@ -34,7 +29,7 @@ namespace Sc2TutsBase.Utils
 			sb.AppendFormat("<div class='filteritem'>");
 			//sb.AppendFormat("<h5>{0}</h5>", metadata.DisplayName);
 			sb.AppendFormat("<ol class=\"selectable\" id=\"{0}\">", metadata.PropertyName);
-			sb.AppendFormat("<li class=\"ui-widget-content header\"><a>{0}</a></li>", metadata.DisplayName);
+			sb.AppendFormat("<li class=\"ui-widget-content header\"><a class='staticLink'>{0}</a></li>", metadata.DisplayName);
 			foreach (TEnum value in values)
 			{
                 string token = Utils.EnumHelper.GetToken<TEnum>(value);
