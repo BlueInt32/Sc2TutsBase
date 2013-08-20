@@ -33,9 +33,9 @@
 {
 	switch (Model.TutoListViewType)
 	{
-		case TutoListViewType.List:@Html.Partial("DetailTutoList", Model.TutorialEntries)
+		case TutoListViewType.List:@Html.Partial("ListTutos", Model.TutorialEntries)
 						  break;
-		case TutoListViewType.Mosaic:@Html.Partial("MosaicTutoList", Model.TutorialEntries)
+		case TutoListViewType.Mosaic:@Html.Partial("MosaicTutos", Model.TutorialEntries)
 						  break;
 	}
 }

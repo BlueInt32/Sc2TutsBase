@@ -36,7 +36,6 @@ namespace Sc2TutsBase.Controllers
 
 		public ActionResult Filter(string filter)
 		{
-
 			if (string.IsNullOrWhiteSpace(filter))
 				return RedirectToAction("List");
 			TutorialListAndFilterModel model = new TutorialListAndFilterModel();

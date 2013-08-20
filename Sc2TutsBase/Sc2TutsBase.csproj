@@ -117,7 +117,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\Client.cs" />
     <Compile Include="Filters\LogExceptionFilter.cs" />
-    <Compile Include="Filters\PostDataFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -260,9 +259,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\Unknown.cshtml" />
     <Content Include="Views\Shared\MosaicTutorialEntry.cshtml" />
-    <Content Include="Views\Shared\MosaicTutoList.cshtml" />
-    <Content Include="Views\Shared\DetailTutoList.cshtml" />
-    <Content Include="Views\Shared\DetailTutorialEntry.cshtml" />
+    <Content Include="Views\Shared\MosaicTutos.cshtml" />
+    <Content Include="Views\Shared\ListTutos.cshtml" />
+    <Content Include="Views\Shared\ListTutorialEntry.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\test.cshtml" />
   </ItemGroup>

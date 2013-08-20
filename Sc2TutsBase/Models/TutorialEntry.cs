@@ -13,7 +13,10 @@ namespace Sc2TutsBase.Models
 		public string Title { get; set; }
 		public string Description { get; set; }
 		public Race Race { get; set; }
+        public string RaceShort {get { return Race.ToString().Substring(0, 1); }}
+
 		public Race Against { get; set; }
+        public string AgainstShort {get { return Race.ToString().Substring(0, 1); }}
 		public League CurrentLeague { get; set; }
 
 		public string VideoUrl { get; set; }
