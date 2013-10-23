@@ -1,807 +1,1482 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfTutorialEntry xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<TutorialEntry Id="2">
-		<Title>S03 E01</Title>
-		<Description>TvZ push sur 2 bases</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=QGse7Ttf4NU</VideoUrl>
-		<YoutubeId>QGse7Ttf4NU</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="3">
-		<Title>S03 E01</Title>
-		<Description>PvP 3grobot HOTS</Description>
-		<Race>Protoss</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=QGse7Ttf4NU#t=907s</VideoUrl>
-		<YoutubeId>QGse7Ttf4NU</YoutubeId>
-		<StartTiming>907</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="4">
-		<Title>S03 E01</Title>
-		<Description>ZVZ Push roach +1</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=QGse7Ttf4NU#t=1478s</VideoUrl>
-		<YoutubeId>QGse7Ttf4NU</YoutubeId>
-		<StartTiming>1478</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="5">
-		<Title>S03 E02</Title>
-		<Description>TvP anti all in puis push sur 2 bases</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=_ILUM3Kl5aw</VideoUrl>
-		<YoutubeId>_ILUM3Kl5aw</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="6">
-		<Title>S03 E02</Title>
-		<Description>PvT 3grobot HOTS safe</Description>
-		<Race>Protoss</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=_ILUM3Kl5aw#t=802s</VideoUrl>
-		<YoutubeId>_ILUM3Kl5aw</YoutubeId>
-		<StartTiming>802</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="7">
-		<Title>S03 E02</Title>
-		<Description>ZVP Push roach Hydras 2 bases</Description>
-		<Race>Zerg</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=_ILUM3Kl5aw#t=1267s</VideoUrl>
-		<YoutubeId>_ILUM3Kl5aw</YoutubeId>
-		<StartTiming>1267</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="8">
-		<Title>S03 E03</Title>
-		<Description>TvP anti canon rush puis push sur 2 bases sanction</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=utS8KSmKjIA</VideoUrl>
-		<YoutubeId>utS8KSmKjIA</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="9">
-		<Title>S03 E03</Title>
-		<Description>PvP 3g robot + switch adapt anti air</Description>
-		<Race>Protoss</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=utS8KSmKjIA#t=582s</VideoUrl>
-		<YoutubeId>utS8KSmKjIA</YoutubeId>
-		<StartTiming>582</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="10">
-		<Title>S03 E03</Title>
-		<Description>ZVZ Push Zerlings allin</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Silver</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=utS8KSmKjIA#t=1226s</VideoUrl>
-		<YoutubeId>utS8KSmKjIA</YoutubeId>
-		<StartTiming>1226</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="11">
-		<Title>S03 E04</Title>
-		<Description>TvZ introduction à la macro marines/tanks</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=whBKfh7WPkc</VideoUrl>
-		<YoutubeId>whBKfh7WPkc</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="12">
-		<Title>S03 E04</Title>
-		<Description>PvT optimisation du 3G robot</Description>
-		<Race>Protoss</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=whBKfh7WPkc#t=787s</VideoUrl>
-		<YoutubeId>whBKfh7WPkc</YoutubeId>
-		<StartTiming>787</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="13">
-		<Title>S03 E04</Title>
-		<Description>ZvT introduction à la macro sur 2 bases avec roaches</Description>
-		<Race>Zerg</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=whBKfh7WPkc#t=1449s</VideoUrl>
-		<YoutubeId>whBKfh7WPkc</YoutubeId>
-		<StartTiming>1449</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="14">
-		<Title>S03 E05</Title>
-		<Description>TvP, BO safe fast exp HOTS avec mines</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=o2PR9plCjPg</VideoUrl>
-		<YoutubeId>o2PR9plCjPg</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="15">
-		<Title>S03 E05</Title>
-		<Description>PvP, le jeu aérien</Description>
-		<Race>Protoss</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=o2PR9plCjPg#t=1000s</VideoUrl>
-		<YoutubeId>o2PR9plCjPg</YoutubeId>
-		<StartTiming>1000</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="16">
-		<Title>S03 E05</Title>
-		<Description> ZvZ Bo safe anti allin mass mass lings</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=o2PR9plCjPg#t=1723s</VideoUrl>
-		<YoutubeId>o2PR9plCjPg</YoutubeId>
-		<StartTiming>1723</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="17">
-		<Title>S03 E06</Title>
-		<Description>TvP, BO safe fast exp</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=4120Rsdodbg</VideoUrl>
-		<YoutubeId>4120Rsdodbg</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E06</Title>
-		<Description>PvZ la sanction</Description>
-		<Race>Protoss</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4120Rsdodbg#t=1221s</VideoUrl>
-		<YoutubeId>4120Rsdodbg</YoutubeId>
-		<StartTiming>1221</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E06</Title>
-		<Description>ZvP Bo 3 bases utilisation des swarm hosts</Description>
-		<Race>Zerg</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4120Rsdodbg#t=2221s</VideoUrl>
-		<YoutubeId>4120Rsdodbg</YoutubeId>
-		<StartTiming>2221</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E07</Title>
-		<Description>TvZ full mech</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Gold</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=53s</VideoUrl>
-		<YoutubeId>VVwCHPKZfzE</YoutubeId>
-		<StartTiming>53</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E07</Title>
-		<Description>PvT introduction à la prise d'info et macro</Description>
-		<Race>Protoss</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=977s</VideoUrl>
-		<YoutubeId>VVwCHPKZfzE</YoutubeId>
-		<StartTiming>977</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E07</Title>
-		<Description>ZvZ gaz 10 pool 10</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=1879s</VideoUrl>
-		<YoutubeId>VVwCHPKZfzE</YoutubeId>
-		<StartTiming>1879</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E07</Title>
-		<Description>ZVP (anti gate expend) </Description>
-		<Race>Zerg</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=2572s</VideoUrl>
-		<YoutubeId>VVwCHPKZfzE</YoutubeId>
-		<StartTiming>2572</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E08</Title>
-		<Description>TvZ Macro game sur 3 bases</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4KiQ6ak7i2U#t=8s</VideoUrl>
-		<YoutubeId>4KiQ6ak7i2U</YoutubeId>
-		<StartTiming>8</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E08</Title>
-		<Description>PvP anti cheese et adaptation</Description>
-		<Race>Protoss</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4KiQ6ak7i2U#t=1049s</VideoUrl>
-		<YoutubeId>4KiQ6ak7i2U</YoutubeId>
-		<StartTiming>1049</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E08</Title>
-		<Description>ZvZ BO du banling défensif anti all in avec transition muta</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4KiQ6ak7i2U#t=2052s</VideoUrl>
-		<YoutubeId>4KiQ6ak7i2U</YoutubeId>
-		<StartTiming>2052</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E09</Title>
-		<Description>TvZ All in 2 rax</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=OklUjTQYUEQ</VideoUrl>
-		<YoutubeId>OklUjTQYUEQ</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E09</Title>
-		<Description>TvT orienté macro (2 games)</Description>
-		<Race>Terran</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=OklUjTQYUEQ#t=676s</VideoUrl>
-		<YoutubeId>OklUjTQYUEQ</YoutubeId>
-		<StartTiming>676</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E09</Title>
-		<Description>PvP adaptation jeu aérien</Description>
-		<Race>Protoss</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=OklUjTQYUEQ#t=1682s</VideoUrl>
-		<YoutubeId>OklUjTQYUEQ</YoutubeId>
-		<StartTiming>1682</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E09</Title>
-		<Description>ZvT, BO du roach 1/1 avec transition</Description>
-		<Race>Zerg</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=OklUjTQYUEQ#t=2512s</VideoUrl>
-		<YoutubeId>OklUjTQYUEQ</YoutubeId>
-		<StartTiming>2512</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E10</Title>
-		<Description>TvZ Macro full mech camping</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=GyDSa_6HZqY</VideoUrl>
-		<YoutubeId>GyDSa_6HZqY</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E10</Title>
-		<Description>PvT jeu sur 2 bases</Description>
-		<Race>Protoss</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Platinum</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=L_mNCVGG0pg</VideoUrl>
-		<YoutubeId>L_mNCVGG0pg</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E10</Title>
-		<Description>ZvZ en allins avec la malédiction du ZvZ ^^</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=UcbEvdbz0gc</VideoUrl>
-		<YoutubeId>UcbEvdbz0gc</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E10</Title>
-		<Description>ZvP en macro fast 3 bases vs allin protoss sur 2 bases</Description>
-		<Race>Zerg</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=O-DZ5u5FDsM</VideoUrl>
-		<YoutubeId>O-DZ5u5FDsM</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E11</Title>
-		<Description>TvP orienté macro avec adaptation et scout du cheese puis sanction</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=53x8JwtaqjY</VideoUrl>
-		<YoutubeId>53x8JwtaqjY</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E11</Title>
-		<Description>PvT avec jeu macrogame Zealotcharge/HT</Description>
-		<Race>Protoss</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=V4bP6t6EYcM</VideoUrl>
-		<YoutubeId>V4bP6t6EYcM</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E11</Title>
-		<Description>ZvRand (ZvZ), scout et adaptation au cheese sur b1 ling banling avec BO du banling défensif</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=V4bP6t6EYcM</VideoUrl>
-		<YoutubeId>V4bP6t6EYcM</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E12</Title>
-		<Description>TvZ: 1ère game TvZ... spéciale</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=o3_hw1W0cZA</VideoUrl>
-		<YoutubeId>o3_hw1W0cZA</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E12</Title>
-		<Description>PvT macro game</Description>
-		<Race>Protoss</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=iI0ClOrROoY</VideoUrl>
-		<YoutubeId>iI0ClOrROoY</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E12</Title>
-		<Description>zvz rapide</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=6en6sXHoLow</VideoUrl>
-		<YoutubeId>6en6sXHoLow</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E12</Title>
-		<Description>ZvP macrogame</Description>
-		<Race>Zerg</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=6en6sXHoLow#t=400s</VideoUrl>
-		<YoutubeId>6en6sXHoLow</YoutubeId>
-		<StartTiming>400</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E13</Title>
-		<Description>TvP macro game après petite pression de la part du protoss</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=pi-St9-WGSs</VideoUrl>
-		<YoutubeId>pi-St9-WGSs</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E13</Title>
-		<Description>PvZ avec macrogame après ouverture stargate</Description>
-		<Race>Protoss</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=u0qipdlV5uo</VideoUrl>
-		<YoutubeId>u0qipdlV5uo</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E13</Title>
-		<Description>ZvZ (grrrr....) anti gaz10 pool 10 cheese</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=CMPbE0dSG5A</VideoUrl>
-		<YoutubeId>CMPbE0dSG5A</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E13</Title>
-		<Description>ZvT, BO macro qui contre le helion maurau medivac push (fait par mvp en finales wcs vs stephano)</Description>
-		<Race>Zerg</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=CMPbE0dSG5A#t=458s</VideoUrl>
-		<YoutubeId>CMPbE0dSG5A</YoutubeId>
-		<StartTiming>458</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E14</Title>
-		<Description>TvT macro</Description>
-		<Race>Terran</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=z_9JG7JSURw#t=1003s</VideoUrl>
-		<YoutubeId>z_9JG7JSURw</YoutubeId>
-		<StartTiming>1003</StartTiming>
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E14</Title>
-		<Description>PvP avec l'illustration de la fast expend aidée du MC</Description>
-		<Race>Protoss</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=BJbe4__MMwo</VideoUrl>
-		<YoutubeId>BJbe4__MMwo</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E14</Title>
-		<Description>ZvT ouverture b3 safe avec défense roachs puis macro game muta ling banling</Description>
-		<Race>Zerg</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=ffWlvzJ6tKU</VideoUrl>
-		<YoutubeId>ffWlvzJ6tKU</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E14</Title>
-		<Description>TvP Une lose (!) avec explications</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=z_9JG7JSURw</VideoUrl>
-		<YoutubeId>z_9JG7JSURw</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E15</Title>
-		<Description>TvX (TvZ) drop helbat sur 3 bases</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=w61Zl8cp1ig</VideoUrl>
-		<YoutubeId>w61Zl8cp1ig</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E15</Title>
-		<Description>PvZ skytoss camping avec canons photons</Description>
-		<Race>Protoss</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=3cv4qJR3-7M</VideoUrl>
-		<YoutubeId>3cv4qJR3-7M</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E15</Title>
-		<Description>ZvZ macro game avec mutas</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=hjjYm_H7mfs</VideoUrl>
-		<YoutubeId>hjjYm_H7mfs</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E16</Title>
-		<Description>TvP macro full mech :) </Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=e1zYjlQ2DXg</VideoUrl>
-		<YoutubeId>e1zYjlQ2DXg</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E16</Title>
-		<Description>PvT macro HT</Description>
-		<Race>Protoss</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=CHooOcyPi4o</VideoUrl>
-		<YoutubeId>CHooOcyPi4o</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E16</Title>
-		<Description>ZvZ (MEHHHHHHHHHHHHHHHHH)</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=m2HsFQcNhkI</VideoUrl>
-		<YoutubeId>m2HsFQcNhkI</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E16</Title>
-		<Description>ZVZ (MEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH)</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=J5bFlas2_rE</VideoUrl>
-		<YoutubeId>J5bFlas2_rE</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>s03E16</Title>
-		<Description>ZvP Anti allin sur 2 bases protoss</Description>
-		<Race>Zerg</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=zFBWiSeVLso</VideoUrl>
-		<YoutubeId>zFBWiSeVLso</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E17</Title>
-		<Description>TvZ chelou ^^</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=5CCL-2tbjMo</VideoUrl>
-		<YoutubeId>5CCL-2tbjMo</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E17</Title>
-		<Description>TvT proxy marau</Description>
-		<Race>Terran</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=3k0VZ-5VFKY</VideoUrl>
-		<YoutubeId>3k0VZ-5VFKY</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E17</Title>
-		<Description>PvP fast exp anti allin</Description>
-		<Race>Protoss</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=CeU35DP5WmY</VideoUrl>
-		<YoutubeId>CeU35DP5WmY</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E17</Title>
-		<Description>ZvT jeu macro adaptatif</Description>
-		<Race>Zerg</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=fdKplRW9qsA</VideoUrl>
-		<YoutubeId>fdKplRW9qsA</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E18</Title>
-		<Description>TvZ jeu bio vs mech macro full mech avec switch BCs</Description>
-		<Race>Terran</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=VJRAvFRwHvo</VideoUrl>
-		<YoutubeId>VJRAvFRwHvo</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E18</Title>
-		<Description>PvZ sanction 1 gate exp avec pression méchante</Description>
-		<Race>Protoss</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=sti2d03tm98</VideoUrl>
-		<YoutubeId>sti2d03tm98</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E18</Title>
-		<Description>ZvZ jeu spécial :) contre du mass air</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=NO7N80vnjt0</VideoUrl>
-		<YoutubeId>NO7N80vnjt0</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E19</Title>
-		<Description>TvP macro ouverture reaper et jeu adaptatif</Description>
-		<Race>Terran</Race>
-		<Against>Protoss</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=ArFE7a48FfM</VideoUrl>
-		<YoutubeId>ArFE7a48FfM</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E19</Title>
-		<Description>PvZ cheesy 5 gates sur B2 loupé puis double stargate</Description>
-		<Race>Protoss</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=V6eghURqLZU</VideoUrl>
-		<YoutubeId>V6eghURqLZU</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E19</Title>
-		<Description>ZvZ gaz 10 pool 10</Description>
-		<Race>Zerg</Race>
-		<Against>Zerg</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=U9kphxByacA</VideoUrl>
-		<YoutubeId>U9kphxByacA</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
-	<TutorialEntry Id="0">
-		<Title>S03 E19</Title>
-		<Description>ZvT 4 queen fast 3 bases gling roach baneling</Description>
-		<Race>Zerg</Race>
-		<Against>Terran</Against>
-		<CurrentLeague>Diamond</CurrentLeague>
-		<VideoUrl>http://www.youtube.com/watch?v=v_vWwInbghE</VideoUrl>
-		<YoutubeId>v_vWwInbghE</YoutubeId>
-		<StartTiming />
-		<Author>Makoz</Author>
-		<CreationDate>15/07/2013 10:57:00</CreationDate>
-	</TutorialEntry>
+  <TutorialEntry Id="1">
+    <Title>OMM S01E01</Title>
+    <Description>TvZ push sur 2 bases</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=QGse7Ttf4NU</VideoUrl>
+    <YoutubeId>QGse7Ttf4NU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="2">
+    <Title>OMM S01E01</Title>
+    <Description>PvP 3grobot HOTS</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=QGse7Ttf4NU#t=907s</VideoUrl>
+    <YoutubeId>QGse7Ttf4NU</YoutubeId>
+    <StartTiming>907</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="3">
+    <Title>OMM S01E01</Title>
+    <Description>ZVZ Push roach +1</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=QGse7Ttf4NU#t=1478s</VideoUrl>
+    <YoutubeId>QGse7Ttf4NU</YoutubeId>
+    <StartTiming>1478</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="4">
+    <Title>OMM S01E02</Title>
+    <Description>TvP anti all in puis push sur 2 bases</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=_ILUM3Kl5aw</VideoUrl>
+    <YoutubeId>_ILUM3Kl5aw</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="5">
+    <Title>OMM S01E02</Title>
+    <Description>PvT 3grobot HOTS safe</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=_ILUM3Kl5aw#t=802s</VideoUrl>
+    <YoutubeId>_ILUM3Kl5aw</YoutubeId>
+    <StartTiming>802</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="6">
+    <Title>OMM S01E02</Title>
+    <Description>ZVP Push roach Hydras 2 bases</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=_ILUM3Kl5aw#t=1267s</VideoUrl>
+    <YoutubeId>_ILUM3Kl5aw</YoutubeId>
+    <StartTiming>1267</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="7">
+    <Title>OMM S01E03</Title>
+    <Description>TvP anti canon rush puis push sur 2 bases sanction</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=utS8KSmKjIA</VideoUrl>
+    <YoutubeId>utS8KSmKjIA</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="8">
+    <Title>OMM S01E03</Title>
+    <Description>PvP 3g robot + switch adapt anti air</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=utS8KSmKjIA#t=582s</VideoUrl>
+    <YoutubeId>utS8KSmKjIA</YoutubeId>
+    <StartTiming>582</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="9">
+    <Title>OMM S01E03</Title>
+    <Description>ZVZ Push Zerlings allin</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=utS8KSmKjIA#t=1226s</VideoUrl>
+    <YoutubeId>utS8KSmKjIA</YoutubeId>
+    <StartTiming>1226</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="10">
+    <Title>OMM S01E04</Title>
+    <Description>TvZ introduction à la macro marines/tanks</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=whBKfh7WPkc</VideoUrl>
+    <YoutubeId>whBKfh7WPkc</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="11">
+    <Title>OMM S01E04</Title>
+    <Description>PvT optimisation du 3G robot</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=whBKfh7WPkc#t=787s</VideoUrl>
+    <YoutubeId>whBKfh7WPkc</YoutubeId>
+    <StartTiming>787</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="12">
+    <Title>OMM S01E04</Title>
+    <Description>ZvT introduction à la macro sur 2 bases avec roaches</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=whBKfh7WPkc#t=1449s</VideoUrl>
+    <YoutubeId>whBKfh7WPkc</YoutubeId>
+    <StartTiming>1449</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="13">
+    <Title>OMM S01E05</Title>
+    <Description>TvP, BO safe fast exp HOTS avec mines</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=o2PR9plCjPg</VideoUrl>
+    <YoutubeId>o2PR9plCjPg</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="14">
+    <Title>OMM S01E05</Title>
+    <Description>PvP, le jeu aérien</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=o2PR9plCjPg#t=1000s</VideoUrl>
+    <YoutubeId>o2PR9plCjPg</YoutubeId>
+    <StartTiming>1000</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="15">
+    <Title>OMM S01E05</Title>
+    <Description> ZvZ Bo safe anti allin mass mass lings</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=o2PR9plCjPg#t=1723s</VideoUrl>
+    <YoutubeId>o2PR9plCjPg</YoutubeId>
+    <StartTiming>1723</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="16">
+    <Title>OMM S01E06</Title>
+    <Description>TvP, BO safe fast exp</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=4120Rsdodbg</VideoUrl>
+    <YoutubeId>4120Rsdodbg</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="17">
+    <Title>OMM S01E06</Title>
+    <Description>PvZ la sanction</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4120Rsdodbg#t=1221s</VideoUrl>
+    <YoutubeId>4120Rsdodbg</YoutubeId>
+    <StartTiming>1221</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="18">
+    <Title>OMM S01E06</Title>
+    <Description>ZvP Bo 3 bases utilisation des swarm hosts</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4120Rsdodbg#t=2221s</VideoUrl>
+    <YoutubeId>4120Rsdodbg</YoutubeId>
+    <StartTiming>2221</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="19">
+    <Title>OMM S01E07</Title>
+    <Description>TvZ full mech</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=53s</VideoUrl>
+    <YoutubeId>VVwCHPKZfzE</YoutubeId>
+    <StartTiming>53</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="20">
+    <Title>OMM S01E07</Title>
+    <Description>PvT introduction à la prise d'info et macro</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=977s</VideoUrl>
+    <YoutubeId>VVwCHPKZfzE</YoutubeId>
+    <StartTiming>977</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="21">
+    <Title>OMM S01E07</Title>
+    <Description>ZvZ gaz 10 pool 10</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=1879s</VideoUrl>
+    <YoutubeId>VVwCHPKZfzE</YoutubeId>
+    <StartTiming>1879</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="22">
+    <Title>OMM S01E07</Title>
+    <Description>ZVP (anti gate expend) </Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=VVwCHPKZfzE#t=2572s</VideoUrl>
+    <YoutubeId>VVwCHPKZfzE</YoutubeId>
+    <StartTiming>2572</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="23">
+    <Title>OMM S01E08</Title>
+    <Description>TvZ Macro game sur 3 bases</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4KiQ6ak7i2U#t=8s</VideoUrl>
+    <YoutubeId>4KiQ6ak7i2U</YoutubeId>
+    <StartTiming>8</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="24">
+    <Title>OMM S01E08</Title>
+    <Description>PvP anti cheese et adaptation</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4KiQ6ak7i2U#t=1049s</VideoUrl>
+    <YoutubeId>4KiQ6ak7i2U</YoutubeId>
+    <StartTiming>1049</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="25">
+    <Title>OMM S01E08</Title>
+    <Description>ZvZ BO du banling défensif anti all in avec transition muta</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=4KiQ6ak7i2U#t=2052s</VideoUrl>
+    <YoutubeId>4KiQ6ak7i2U</YoutubeId>
+    <StartTiming>2052</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="26">
+    <Title>OMM S01E09</Title>
+    <Description>TvZ All in 2 rax</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=OklUjTQYUEQ</VideoUrl>
+    <YoutubeId>OklUjTQYUEQ</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="27">
+    <Title>OMM S01E09</Title>
+    <Description>TvT orienté macro (2 games)</Description>
+    <Race>Terran</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=OklUjTQYUEQ#t=676s</VideoUrl>
+    <YoutubeId>OklUjTQYUEQ</YoutubeId>
+    <StartTiming>676</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="28">
+    <Title>OMM S01E09</Title>
+    <Description>PvP adaptation jeu aérien</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=OklUjTQYUEQ#t=1682s</VideoUrl>
+    <YoutubeId>OklUjTQYUEQ</YoutubeId>
+    <StartTiming>1682</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="29">
+    <Title>OMM S01E09</Title>
+    <Description>ZvT, BO du roach 1/1 avec transition</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=OklUjTQYUEQ#t=2512s</VideoUrl>
+    <YoutubeId>OklUjTQYUEQ</YoutubeId>
+    <StartTiming>2512</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="30">
+    <Title>OMM S01E10</Title>
+    <Description>TvZ Macro full mech camping</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=GyDSa_6HZqY</VideoUrl>
+    <YoutubeId>GyDSa_6HZqY</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="31">
+    <Title>OMM S01E10</Title>
+    <Description>PvT jeu sur 2 bases</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Platinum</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=L_mNCVGG0pg</VideoUrl>
+    <YoutubeId>L_mNCVGG0pg</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="32">
+    <Title>OMM S01E10</Title>
+    <Description>ZvZ en allins avec la malédiction du ZvZ ^^</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=UcbEvdbz0gc</VideoUrl>
+    <YoutubeId>UcbEvdbz0gc</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="33">
+    <Title>OMM S01E10</Title>
+    <Description>ZvP en macro fast 3 bases vs allin protoss sur 2 bases</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=O-DZ5u5FDsM</VideoUrl>
+    <YoutubeId>O-DZ5u5FDsM</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="34">
+    <Title>OMM S01E11</Title>
+    <Description>TvP orienté macro avec adaptation et scout du cheese puis sanction</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=53x8JwtaqjY</VideoUrl>
+    <YoutubeId>53x8JwtaqjY</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="35">
+    <Title>OMM S01E11</Title>
+    <Description>PvT avec jeu macrogame Zealotcharge/HT</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=V4bP6t6EYcM</VideoUrl>
+    <YoutubeId>V4bP6t6EYcM</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="36">
+    <Title>OMM S01E11</Title>
+    <Description>ZvRand (ZvZ), scout et adaptation au cheese sur b1 ling banling avec BO du banling défensif</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=V4bP6t6EYcM</VideoUrl>
+    <YoutubeId>V4bP6t6EYcM</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="37">
+    <Title>OMM S01E12</Title>
+    <Description>TvZ: 1ère game TvZ... spéciale</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=o3_hw1W0cZA</VideoUrl>
+    <YoutubeId>o3_hw1W0cZA</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="38">
+    <Title>OMM S01E12</Title>
+    <Description>PvT macro game</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=iI0ClOrROoY</VideoUrl>
+    <YoutubeId>iI0ClOrROoY</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="39">
+    <Title>OMM S01E12</Title>
+    <Description>zvz rapide</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=6en6sXHoLow</VideoUrl>
+    <YoutubeId>6en6sXHoLow</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="40">
+    <Title>OMM S01E12</Title>
+    <Description>ZvP macrogame</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=6en6sXHoLow#t=400s</VideoUrl>
+    <YoutubeId>6en6sXHoLow</YoutubeId>
+    <StartTiming>400</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="41">
+    <Title>OMM S01E13</Title>
+    <Description>TvP macro game après petite pression de la part du protoss</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=pi-St9-WGSs</VideoUrl>
+    <YoutubeId>pi-St9-WGSs</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="42">
+    <Title>OMM S01E13</Title>
+    <Description>PvZ avec macrogame après ouverture stargate</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=u0qipdlV5uo</VideoUrl>
+    <YoutubeId>u0qipdlV5uo</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="43">
+    <Title>OMM S01E13</Title>
+    <Description>ZvZ (grrrr....) anti gaz10 pool 10 cheese</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=CMPbE0dSG5A</VideoUrl>
+    <YoutubeId>CMPbE0dSG5A</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="44">
+    <Title>OMM S01E13</Title>
+    <Description>ZvT, BO macro qui contre le helion maurau medivac push (fait par mvp en finales wcs vs stephano)</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=CMPbE0dSG5A#t=458s</VideoUrl>
+    <YoutubeId>CMPbE0dSG5A</YoutubeId>
+    <StartTiming>458</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="45">
+    <Title>OMM S01E14</Title>
+    <Description>TvT macro</Description>
+    <Race>Terran</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=z_9JG7JSURw#t=1003s</VideoUrl>
+    <YoutubeId>z_9JG7JSURw</YoutubeId>
+    <StartTiming>1003</StartTiming>
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="46">
+    <Title>OMM S01E14</Title>
+    <Description>PvP avec l'illustration de la fast expend aidée du MC</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=BJbe4__MMwo</VideoUrl>
+    <YoutubeId>BJbe4__MMwo</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="47">
+    <Title>OMM S01E14</Title>
+    <Description>ZvT ouverture b3 safe avec défense roachs puis macro game muta ling banling</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=ffWlvzJ6tKU</VideoUrl>
+    <YoutubeId>ffWlvzJ6tKU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="48">
+    <Title>OMM S01E14</Title>
+    <Description>TvP Une lose (!) avec explications</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=z_9JG7JSURw</VideoUrl>
+    <YoutubeId>z_9JG7JSURw</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="49">
+    <Title>OMM S01E15</Title>
+    <Description>TvX (TvZ) drop helbat sur 3 bases</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=w61Zl8cp1ig</VideoUrl>
+    <YoutubeId>w61Zl8cp1ig</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="50">
+    <Title>OMM S01E15</Title>
+    <Description>PvZ skytoss camping avec canons photons</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=3cv4qJR3-7M</VideoUrl>
+    <YoutubeId>3cv4qJR3-7M</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="51">
+    <Title>OMM S01E15</Title>
+    <Description>ZvZ macro game avec mutas</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=hjjYm_H7mfs</VideoUrl>
+    <YoutubeId>hjjYm_H7mfs</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="52">
+    <Title>OMM S01E16</Title>
+    <Description>TvP macro full mech :) </Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=e1zYjlQ2DXg</VideoUrl>
+    <YoutubeId>e1zYjlQ2DXg</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="53">
+    <Title>OMM S01E16</Title>
+    <Description>PvT macro HT</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=CHooOcyPi4o</VideoUrl>
+    <YoutubeId>CHooOcyPi4o</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="54">
+    <Title>OMM S01E16</Title>
+    <Description>ZvZ (MEHHHHHHHHHHHHHHHHH)</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=m2HsFQcNhkI</VideoUrl>
+    <YoutubeId>m2HsFQcNhkI</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="55">
+    <Title>OMM S01E16</Title>
+    <Description>ZVZ (MEHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH)</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=J5bFlas2_rE</VideoUrl>
+    <YoutubeId>J5bFlas2_rE</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="56">
+    <Title>OMM S01E16</Title>
+    <Description>ZvP Anti allin sur 2 bases protoss</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=zFBWiSeVLso</VideoUrl>
+    <YoutubeId>zFBWiSeVLso</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="57">
+    <Title>OMM S01E17</Title>
+    <Description>TvZ chelou ^^</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=5CCL-2tbjMo</VideoUrl>
+    <YoutubeId>5CCL-2tbjMo</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="58">
+    <Title>OMM S01E17</Title>
+    <Description>TvT proxy marau</Description>
+    <Race>Terran</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=3k0VZ-5VFKY</VideoUrl>
+    <YoutubeId>3k0VZ-5VFKY</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="59">
+    <Title>OMM S01E17</Title>
+    <Description>PvP fast exp anti allin</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=CeU35DP5WmY</VideoUrl>
+    <YoutubeId>CeU35DP5WmY</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="60">
+    <Title>OMM S01E17</Title>
+    <Description>ZvT jeu macro adaptatif</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=fdKplRW9qsA</VideoUrl>
+    <YoutubeId>fdKplRW9qsA</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="61">
+    <Title>OMM S01E18</Title>
+    <Description>TvZ jeu bio vs mech macro full mech avec switch BCs</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=VJRAvFRwHvo</VideoUrl>
+    <YoutubeId>VJRAvFRwHvo</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="62">
+    <Title>OMM S01E18</Title>
+    <Description>PvZ sanction 1 gate exp avec pression méchante</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=sti2d03tm98</VideoUrl>
+    <YoutubeId>sti2d03tm98</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="63">
+    <Title>OMM S01E18</Title>
+    <Description>ZvZ jeu spécial :) contre du mass air</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=NO7N80vnjt0</VideoUrl>
+    <YoutubeId>NO7N80vnjt0</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="64">
+    <Title>OMM S01E19</Title>
+    <Description>TvP macro ouverture reaper et jeu adaptatif</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=ArFE7a48FfM</VideoUrl>
+    <YoutubeId>ArFE7a48FfM</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="65">
+    <Title>OMM S01E19</Title>
+    <Description>PvZ cheesy 5 gates sur B2 loupé puis double stargate</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=V6eghURqLZU</VideoUrl>
+    <YoutubeId>V6eghURqLZU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="66">
+    <Title>OMM S01E19</Title>
+    <Description>ZvZ gaz 10 pool 10</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=U9kphxByacA</VideoUrl>
+    <YoutubeId>U9kphxByacA</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="67">
+    <Title>OMM S01E19</Title>
+    <Description>ZvT 4 queen fast 3 bases gling roach baneling</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=v_vWwInbghE</VideoUrl>
+    <YoutubeId>v_vWwInbghE</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>15/07/2013 10:57:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="68">
+    <Title>OMM S02E01</Title>
+    <Description>TvT 3 rax maurau</Description>
+    <Race>Terran</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Bronze</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=KwJ4AxCK_fA</VideoUrl>
+    <YoutubeId>KwJ4AxCK_fA</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="69">
+    <Title>OMM S02E01</Title>
+    <Description>4 gates fast</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Bronze</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=KwJ4AxCK_fA#t=738</VideoUrl>
+    <YoutubeId>KwJ4AxCK_fA</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="70">
+    <Title>OMM S02E01</Title>
+    <Description>ZvT Banlings 1 base</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Bronze</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=KwJ4AxCK_fA#t=1198</VideoUrl>
+    <YoutubeId>KwJ4AxCK_fA</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="71">
+    <Title>OMM S02E02</Title>
+    <Description>TvT push helion marauder</Description>
+    <Race>Terran</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Bronze</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=Fo4XQ9EqN6Y</VideoUrl>
+    <YoutubeId>Fo4XQ9EqN6Y</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="72">
+    <Title>OMM S02E02</Title>
+    <Description>PvP 4 gates complet</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Bronze</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=Fo4XQ9EqN6Y#t=579</VideoUrl>
+    <YoutubeId>Fo4XQ9EqN6Y</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="73">
+    <Title>OMM S02E02</Title>
+    <Description>ZvP push roachs sur B1</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=Fo4XQ9EqN6Y#t=1274</VideoUrl>
+    <YoutubeId>Fo4XQ9EqN6Y</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="74">
+    <Title>OMM S02E03</Title>
+    <Description>TvZ polt push</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=wuGifCtU4MM</VideoUrl>
+    <YoutubeId>wuGifCtU4MM</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="75">
+    <Title>OMM S02E03</Title>
+    <Description>PvT 4 gate complet</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=wuGifCtU4MM#t=619</VideoUrl>
+    <YoutubeId>wuGifCtU4MM</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="76">
+    <Title>OMM S02E03</Title>
+    <Description>ZvZ gestion de cheese et transition BO simple roach +1</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=wuGifCtU4MM#t=1008</VideoUrl>
+    <YoutubeId>wuGifCtU4MM</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="77">
+    <Title>OMM S02E04</Title>
+    <Description>TvT push marines tanks</Description>
+    <Race>Terran</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=Cvuqj3xL9Cw</VideoUrl>
+    <YoutubeId>Cvuqj3xL9Cw</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="78">
+    <Title>OMM S02E04</Title>
+    <Description>PvZ 4 gates</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=Cvuqj3xL9Cw#t=830</VideoUrl>
+    <YoutubeId>Cvuqj3xL9Cw</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="79">
+    <Title>OMM S02E04</Title>
+    <Description>ZvZ push roachs simple sur 2 bases</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=Cvuqj3xL9Cw#t=1478</VideoUrl>
+    <YoutubeId>Cvuqj3xL9Cw</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="80">
+    <Title>OMM S02E05</Title>
+    <Description>tvp push bio sur une base (intro au jeu bio)</Description>
+    <Race>Terran</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=hr1P3lq2o70</VideoUrl>
+    <YoutubeId>hr1P3lq2o70</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="81">
+    <Title>OMM S02E05</Title>
+    <Description>pvp 3g robot simple et efficace</Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=hr1P3lq2o70#t=659</VideoUrl>
+    <YoutubeId>hr1P3lq2o70</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="82">
+    <Title>OMM S02E05</Title>
+    <Description>ZvP prépa du push roach safe</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=hr1P3lq2o70#t=1210</VideoUrl>
+    <YoutubeId>hr1P3lq2o70</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="83">
+    <Title>OMM S02E06</Title>
+    <Description>TvZ Polt push</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=Ug4tl0hLYdI</VideoUrl>
+    <YoutubeId>Ug4tl0hLYdI</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="84">
+    <Title>OMM S02E06</Title>
+    <Description>PvT, 3g robot</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=Ug4tl0hLYdI#t=601</VideoUrl>
+    <YoutubeId>Ug4tl0hLYdI</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="85">
+    <Title>OMM S02E06</Title>
+    <Description>ZvT, Push roach banelings</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=Ug4tl0hLYdI#t=1119</VideoUrl>
+    <YoutubeId>Ug4tl0hLYdI</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="86">
+    <Title>OMM S02E07</Title>
+    <Description>TvT réalisation propre du 1/1/1 simple</Description>
+    <Race>Terran</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=ZL1ALDSBalU</VideoUrl>
+    <YoutubeId>ZL1ALDSBalU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="87">
+    <Title>OMM S02E07</Title>
+    <Description>PvT Expend protoss avec timing push</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=ZL1ALDSBalU#t=640</VideoUrl>
+    <YoutubeId>ZL1ALDSBalU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="88">
+    <Title>OMM S02E07</Title>
+    <Description>ZvZ jeu adaptatif</Description>
+    <Race>Zerg</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=ZL1ALDSBalU#t=1162</VideoUrl>
+    <YoutubeId>ZL1ALDSBalU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="89">
+    <Title>OMM S02E08</Title>
+    <Description>TvZ anti cheese</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=9x97si8zIUU</VideoUrl>
+    <YoutubeId>9x97si8zIUU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="90">
+    <Title>OMM S02E08</Title>
+    <Description>PvT 2 bases colossus</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=9x97si8zIUU#t=392</VideoUrl>
+    <YoutubeId>9x97si8zIUU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="91">
+    <Title>OMM S02E08</Title>
+    <Description>ZvP jeu adaptatif</Description>
+    <Race>Zerg</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=9x97si8zIUU#t=1086</VideoUrl>
+    <YoutubeId>9x97si8zIUU</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="92">
+    <Title>OMM S02E09</Title>
+    <Description>TvZ Push marine avec shield et adaptation</Description>
+    <Race>Terran</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=AjC8nsd4q0E</VideoUrl>
+    <YoutubeId>AjC8nsd4q0E</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="93">
+    <Title>OMM S02E09</Title>
+    <Description>PvT cheese oracle, adaptation go aerien</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=AjC8nsd4q0E#t=931</VideoUrl>
+    <YoutubeId>AjC8nsd4q0E</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="94">
+    <Title>OMM S02E09</Title>
+    <Description>ZvT, fast roach 1/1 (si FE terran)</Description>
+    <Race>Zerg</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Silver</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?feature=player_detailpage&amp;v=AjC8nsd4q0E#t=1520</VideoUrl>
+    <YoutubeId>AjC8nsd4q0E</YoutubeId>
+    <StartTiming />
+    <VideoType>OMM</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="95">
+    <Title>All in zealots</Title>
+    <Description>PvZ cheesy, zealots après nexus first sans forge puis void rays</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+      <League>Platinum</League>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=2MB0kHXtKHQ</VideoUrl>
+    <YoutubeId>2MB0kHXtKHQ</YoutubeId>
+    <StartTiming />
+    <VideoType>BuildOrder</VideoType>
+    <Author>StraightEdge</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="96">
+    <Title>Guide du PvP (54min) - PvP</Title>
+    <Description>Explications générales sur une game pvp avec le decision making </Description>
+    <Race>Protoss</Race>
+    <Against>Protoss</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+      <League>Platinum</League>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=pCwWGm26hnw</VideoUrl>
+    <YoutubeId>pCwWGm26hnw</YoutubeId>
+    <StartTiming />
+    <VideoType>Concepts</VideoType>
+    <Author>StraightEdge</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="97">
+    <Title>Macrogame PvT (54min)</Title>
+    <Description>Explications générales sur un PvT macro</Description>
+    <Race>Protoss</Race>
+    <Against>Terran</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+      <League>Platinum</League>
+      <League>Diamond</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=qDSev3Si-9E</VideoUrl>
+    <YoutubeId>qDSev3Si-9E</YoutubeId>
+    <StartTiming />
+    <VideoType>BuildOrder</VideoType>
+    <Author>StraightEdge</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
+  <TutorialEntry Id="98">
+    <Title>Le skytoss de Makoz</Title>
+    <Description>Strategie mass air en PvZ</Description>
+    <Race>Protoss</Race>
+    <Against>Zerg</Against>
+    <CurrentLeague>
+      <League>Gold</League>
+      <League>Platinum</League>
+      <League>Diamond</League>
+      <League>Master</League>
+    </CurrentLeague>
+    <VideoUrl>http://www.youtube.com/watch?v=wXclCT6on5E</VideoUrl>
+    <YoutubeId>wXclCT6on5E</YoutubeId>
+    <StartTiming />
+    <VideoType>BuildOrder</VideoType>
+    <Author>Makoz</Author>
+    <CreationDate>01/01/0001 00:00:00</CreationDate>
+  </TutorialEntry>
 </ArrayOfTutorialEntry>

@@ -25,9 +25,9 @@ namespace Sc2TutsBase
 
             Application["TutoList"] = TutsListSerializer.LoadTutsFromFile();
 
-
-            log4net.Config.XmlConfigurator.Configure();
+			Log.Log4NetInit();
             Log.InfoFormat("Global.asax", "Application_Start");
+
 
 		}
 

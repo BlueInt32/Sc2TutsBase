@@ -9,6 +9,8 @@ namespace Sc2TutsBase.Models
 	public enum Caster
 	{
 		[Token("m")]Makoz,
-		[Token("a")]Anoss
+		[Token("a")]Anoss,
+		[Token("t")]Tod,
+		[Token("s")]StraightEdge,
 	}
 }

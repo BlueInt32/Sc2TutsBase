@@ -1,0 +1,88 @@
+﻿@model Sc2TutsBase.Models.TutorialEntry
+@using Tools.Extensions
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginFileForm()) {
+    @Html.ValidationSummary(true)
+
+<h2>En attendant Makoz Friends Admin</h2>
+    <fieldset id="editionfs">
+        <legend>Nouveau tutorial</legend>
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Author)
+        </div>
+        <div class="editor-field">
+            @Html.EnumDropDownListFor(model => model.Author)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Title, new { style = "width:600px;" })
+        </div>
+		
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VideoUrl)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.VideoUrl, new { style="width:600px;"})
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Description, new { style = "width:600px;" })
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CurrentLeague)
+        </div>
+        <div class="editor-field">
+            @Html.EnumMultipleDropDownListFor(model => model.CurrentLeague)
+			@*@Html.ListBox("CurrentLeague", Model.CurrentLeague as MultiSelectList	)*@
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Race)
+        </div>
+        <div class="editor-field">
+            @Html.EnumDropDownListFor(model => model.Race)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Against)
+        </div>
+        <div class="editor-field">
+            @Html.EnumDropDownListFor(model => model.Against)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VideoType)
+        </div>
+        <div class="editor-field">
+            @Html.EnumDropDownListFor(model => model.VideoType)
+        </div>
+
+        <div class="editor-label">
+            Fichier de BO (pdf)
+        </div>
+        <div class="editor-field">
+			<input type="file" id="pdfFile" name="pdfFile"/>
+        </div>
+        <p>
+            <input type="submit" value="Ajouter" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

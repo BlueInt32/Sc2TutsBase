@@ -39,10 +39,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RouteDebugger">
+      <HintPath>..\packages\routedebugger.2.1.4.0\lib\net40\RouteDebugger.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -111,8 +111,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\TutorialController.cs" />
+    <Compile Include="Areas\administration\administrationAreaRegistration.cs" />
+    <Compile Include="Areas\administration\Controllers\TutorialController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\Client.cs" />
@@ -129,6 +129,7 @@
     <Compile Include="Models\Race.cs" />
     <Compile Include="Models\TutorialEntry.cs" />
     <Compile Include="Models\TutorialListAndFilterModel.cs" />
+    <Compile Include="Models\VideoType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\EnumHelper.cs" />
     <Compile Include="Utils\JquerySelectableExtensions.cs" />
@@ -220,7 +221,6 @@
     <Content Include="Content\js\jquery-1.10.2.min.js" />
     <Content Include="Content\js\masonry.pkgd.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="resharper.ReadMe.txt" />
     <Content Include="tutslist.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -235,19 +235,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\administration\Models\" />
     <Folder Include="Logs\" />
+    <Folder Include="pdfFiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Tutorial\CreateTuto.cshtml" />
-    <Content Include="Areas\Admin\Views\Tutorial\EditTuto.cshtml" />
-    <Content Include="Areas\Admin\Views\Tutorial\ListTuto.cshtml" />
-    <Content Include="Areas\Admin\Views\Web.config" />
-    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\administration\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\administration\Views\Tutorial\CreateTuto.cshtml" />
+    <Content Include="Areas\administration\Views\Tutorial\EditTuto.cshtml" />
+    <Content Include="Areas\administration\Views\Tutorial\ListTuto.cshtml" />
+    <Content Include="Areas\administration\Views\Web.config" />
+    <Content Include="Areas\administration\Views\Tutorial\Index.cshtml" />
+    <Content Include="Areas\administration\Views\_ViewStart.cshtml" />
     <None Include="Content\img\hiresleagueicons\DeviantArt account.url" />
     <Content Include="Views\Home\List.cshtml" />
     <Content Include="Views\Home\Tests.cshtml" />
@@ -285,7 +287,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54423</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

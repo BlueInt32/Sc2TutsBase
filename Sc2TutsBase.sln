@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.20617.1 PREVIEW
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sc2TutsBase", "Sc2TutsBase\Sc2TutsBase.csproj", "{AAD769F8-548C-4E42-8A40-52585099C9CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{EBC75A07-3546-4F5B-8DA6-66C3EF90B8C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "..\Tools\Tools.csproj", "{7430F9D1-A88E-4AE2-9EEC-1C03F3A87020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C91DE8BA-2A6B-4604-A0EC-0D2CB13A5015}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogNovediaApplication", "WebApplication1\BlogNovediaApplication.csproj", "{C91DE8BA-2A6B-4604-A0EC-0D2CB13A5015}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

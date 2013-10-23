@@ -1,0 +1,19 @@
+﻿@model List<Sc2TutsBase.Models.League>
+
+@if (Model.Count == 1)
+{
+	<img src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", Model.First()))" class="pictoleague" />
+}
+else
+{
+	int zindex = 10;
+	int xOffset = 16;
+	string offsetStr = string.Empty;
+	foreach (Sc2TutsBase.Models.League item in Model)
+	{
+		zindex--;
+		xOffset -= 4;
+		offsetStr = string.Format("{0}px", xOffset);
+		<img title="@string.Join(", ", Model.ToArray())" src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", item))" class="pictoleague" style="z-index:@zindex; right:@offsetStr;" />
+	}
+}

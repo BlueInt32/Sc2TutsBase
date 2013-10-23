@@ -2,12 +2,17 @@
 @model Sc2TutsBase.Models.TutorialEntry
 <li class="itemLi">
 	<a href="@Model.VideoUrl" target="_blank" class="listTuto">
-		<span>@Model.Title</span>
-		@*<span>@Html.Raw(string.Format("{0}v{1}", Model.Race.ToString().Substring(0, 1), Model.Against.ToString().Substring(0, 1)))</span>*@
-		<span>@Html.Partial("PictoCaster", Model.Author) @Model.Author</span>
+		<span title="@Model.Title">@Model.Title.Shorten(20, true, false)</span>
+		<span>@Html.Partial("PictoCaster", Model.Author)</span>
 		<span>@Html.Partial("PictoRace", Model.Race, new ViewDataDictionary { { "imgclass", "pictomid" } }) v @Html.Partial("PictoRace", Model.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } }) 
 		@Html.Raw(string.Format("({0}v{1})", Model.RaceShort, Model.AgainstShort))</span>
 		<span><img src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", Model.CurrentLeague))" class="pictoleague" /></span>
+		
 		<span title="@Model.Description">@Model.Description.Shorten(100, true, true)</span>
+		
 	</a>
+	@if (!string.IsNullOrWhiteSpace(Model.PathToPdf))
+	{
+		<span class="pdf"><a target="_blank" href="@Model.PathToPdf"></a></span>
+	}
 </li>

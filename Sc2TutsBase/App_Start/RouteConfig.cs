@@ -16,11 +16,42 @@ namespace Sc2TutsBase
 		string s = "";
 		public static void RegisterRoutes(RouteCollection routes)
 		{
-             StringBuilder enumStrBuilder = new StringBuilder();
 
+			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+			routes.MapRoute(
+			name: "SwitchDisplayMode",
+			url: "switch/{mode}",
+			defaults: new { controller = "Home", action = "SwitchDisplayMode", mode = UrlParameter.Optional },
+			constraints: new { mode = @"(l|d){0,1}" }
+			);
+			routes.MapRoute(
+				name: "404",
+				url: "404",
+				defaults: new { controller = "Error", action = "Unknown", filter = UrlParameter.Optional }
+				);
+			routes.MapRoute(
+				name: "Filter",
+				url: "filter/{filter}",
+				defaults: new { controller = "Home", action = "Filter", filter = UrlParameter.Optional },
+				constraints: new { filter = CreateFilterConstraints }
+				);
+			routes.MapRoute(
+				name: "Default",
+				url: "{controller}/{action}/{id}",
+				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+			);
+		}
 
-             string globalRegexPattern = string.Concat(
+		private static string CreateFilterConstraints
+		{
+			get
+			{
+				StringBuilder enumStrBuilder = new StringBuilder();
+
+				return string.Concat(
 					"^(",
+					GetEnumsRegexPattern(VideoType.OMM, ref enumStrBuilder),
+					"_",
 					GetEnumsRegexPattern(League.Bronze, ref enumStrBuilder),
 					"_",
 					GetEnumsRegexPattern(Race.Protoss, ref enumStrBuilder),
@@ -29,43 +60,17 @@ namespace Sc2TutsBase
 					"_",
 					GetEnumsRegexPattern(Caster.Anoss, ref enumStrBuilder),
 					@"_[a-zA-Z0-9{0}áàâäãéèêëíìîïĩóòôöõúüîôûúùýñçÿ\s' \+]*)?",
-					"$"
-			); 
-            //= Enum.GetValues(typeof(League)).Cast<League>().Aggregate(string.Empty, el => el.ToString().Substring(0, 1).ToLower(), resultStr => 
+					"$");
 
-
-
-			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-				routes.MapRoute(
-                name:"SwitchDisplayMode",
-                url: "switch/{mode}",
-				defaults: new { controller = "Home", action = "SwitchDisplayMode", mode = UrlParameter.Optional },
-				constraints: new { mode = @"(l|d){0,1}" }
-                );
-            routes.MapRoute(
-                name:"404",
-                url: "404",
-                defaults: new { controller = "Error", action = "Unknown", filter = UrlParameter.Optional}
-                );
-            routes.MapRoute(
-				name: "Filter",
-				url: "filter/{filter}",
-				defaults: new { controller = "Home", action = "Filter", filter = UrlParameter.Optional },
-				constraints: new { filter = globalRegexPattern }
-                );
-			routes.MapRoute(
-				name: "Default",
-				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-			);
+			}
 		}
 
-        public static string GetEnumsRegexPattern<TEnum>(TEnum typeEnum, ref StringBuilder enumStrBuilder)
-        {
-            enumStrBuilder.Clear(); 
+		public static string GetEnumsRegexPattern<TEnum>(TEnum typeEnum, ref StringBuilder enumStrBuilder)
+		{
+			enumStrBuilder.Clear();
 			var regexPartLeague = Enum.GetValues(typeof(TEnum)).Cast<TEnum>().ToList();
-            string tokens = EnumHelper.GetTokens<TEnum>("|");
+			string tokens = EnumHelper.GetTokens<TEnum>("|");
 			return string.Format(@"(({0})?\.){{0,{1}}}({0})?", tokens, regexPartLeague.Count - 1);
-        }
+		}
 	}
 }

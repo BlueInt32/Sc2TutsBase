@@ -1,13 +1,19 @@
 ﻿@model Sc2TutsBase.Models.TutorialEntry
 <div class="item">
-	<div class="casterdiv">@Html.Partial("PictoCaster", Model.Author) @Model.Author</div>
-	<img src="@Url.Content(string.Format("~/content/img/hiresleagueicons/{0}_small.png", Model.CurrentLeague))" class="pictoleague" />
+	<a class="linkedit" href="@Url.Content(string.Format("~/administration/tutorial/edittuto/{0}", Model.Id))" target="_blank"></a>
+	<div class="casterdiv" title="@Model.Author">@Html.Partial("PictoCaster", Model.Author)</div>
+	@Html.Partial("PictoLeagues", Model.CurrentLeague)
 	<h4><div> @Model.Title - @Html.Raw(string.Format("{0}v{1}", Model.Race.ToString().Substring(0, 1), Model.Against.ToString().Substring(0, 1)))</div>
 	<div class="matchupPicto">@Html.Partial("PictoRace", Model.Race, new ViewDataDictionary() { { "imgclass", "pictomid" } }) vs @Html.Partial("PictoRace", Model.Against, new ViewDataDictionary() { { "imgclass", "pictosmall" } })</div>
 	</h4>
 	<div class="subitem">
-        <p class="desc">@Model.Description</p>
-        @*<a href="@Model.VideoUrl" target="_blank">Visionner</a>*@
+        <div class="desc">
+			<p>@Model.Description</p>
+			@if (!string.IsNullOrWhiteSpace(Model.PathToPdf))
+			{
+				<div class="pdf"><a target="_blank" href="@Model.PathToPdf"></a></div>
+			}
+		</div>
         <a href="@Model.VideoUrl" target="_blank" class="youtubethumb"></a>
         <img class="youtubethumbimg" alt="youtubethumb" src="http://img.youtube.com/vi/@Model.YoutubeId/1.jpg" />
 	</div>

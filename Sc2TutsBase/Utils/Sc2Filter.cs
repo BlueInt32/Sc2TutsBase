@@ -11,6 +11,21 @@ namespace Sc2TutsBase.Utils
 	public class Sc2Filter
 	{
 		readonly List<string> splitEmptyIrrelevantList = new List<string> { "" };
+
+
+
+		public DisplayMode DisplayModeSelected { get; set; }
+		[DisplayName("Ligue")]
+		public List<League> LeaguesSelected { get; set; }
+		[DisplayName("Race")]
+		public List<Race> RacesSelected { get; set; }
+		[DisplayName("Contre")]
+		public List<Race> AgainstsSelected { get; set; }
+		[DisplayName("Caster")]
+		public List<Caster> CastersSelected { get; set; }
+		[DisplayName("Type")]
+		public List<VideoType> VideoTypeSelected { get; set; }
+
 		public Sc2Filter()
 		{
 		}
@@ -18,18 +33,14 @@ namespace Sc2TutsBase.Utils
 		{
 			string[] aFilters = filterToken.Split('_');
 			//DisplayModeSelected = aFilters[0] == "l" ? DisplayMode.List : DisplayMode.Details;
-			LeaguesSelected = aFilters[0].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseLeague);
-			RacesSelected = aFilters[1].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
-			AgainstsSelected = aFilters[2].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
-			CastersSelected = aFilters[3].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseCaster);
-			SearchText = HttpUtility.UrlDecode(aFilters[4]).ToLower();
+			VideoTypeSelected = aFilters[0].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseVideoType);
+			LeaguesSelected = aFilters[1].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseLeague);
+			RacesSelected = aFilters[2].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
+			AgainstsSelected = aFilters[3].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseRace);
+			CastersSelected = aFilters[4].Split('.').Except(splitEmptyIrrelevantList).ToList().ConvertAll(ParseCaster);
+			SearchText = HttpUtility.UrlDecode(aFilters[5]).ToLower();
 			
 		}
-
-		//public string MatchUpReplacer(Match match)
-		//{
-			
-		//}
 
 		public void Apply(ref IEnumerable<TutorialEntry> list)
 		{
@@ -58,9 +69,10 @@ namespace Sc2TutsBase.Utils
 				}
 			}
 
-
+			if (VideoTypeSelected.Count > 0)
+				list = list.Where(t => VideoTypeSelected.Contains(t.VideoType));
 			if (LeaguesSelected.Count > 0)
-				list = list.Where(t => LeaguesSelected.Contains(t.CurrentLeague));
+				list = list.Where(t => t.CurrentLeague.Union(LeaguesSelected).Any());
 			if (RacesSelected.Count > 0)
 				list = list.Where(t => RacesSelected.Contains(t.Race));
 			if (AgainstsSelected.Count > 0)
@@ -68,24 +80,15 @@ namespace Sc2TutsBase.Utils
 			if (CastersSelected.Count > 0)
 				list = list.Where(t => CastersSelected.Contains(t.Author));
 
-			
 			return;
 		}
 
-		public DisplayMode DisplayModeSelected { get; set; }
-
-		[DisplayName("Ligue")]
-		public List<League> LeaguesSelected { get; set; }
-		[DisplayName("Race")]
-		public List<Race> RacesSelected { get; set; }
-		[DisplayName("Contre")]
-		public List<Race> AgainstsSelected { get; set; }
-		[DisplayName("Caster")]
-		public List<Caster> CastersSelected { get; set; }
-
-
 		public string SearchText { get; set; }
 		
+		private VideoType ParseVideoType(string tokenType)
+		{
+			return EnumHelper.GetEnumValueFromToken<VideoType>(tokenType);
+		}
 		private Race ParseRace(string tokenRace)
 		{
 			return EnumHelper.GetEnumValueFromToken<Race>(tokenRace);
@@ -98,6 +101,5 @@ namespace Sc2TutsBase.Utils
 		{
 			return EnumHelper.GetEnumValueFromToken<League>(tokenLeague);
 		}
-
 	}
 }

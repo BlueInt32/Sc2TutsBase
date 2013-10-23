@@ -9,12 +9,13 @@
 {
 	<h4>Modules de filtres</h4>
 	<div id="filters">
+		@Html.JquerySelectableListFor(model => model.Filter.VideoTypeSelected, null)
 		@Html.JquerySelectableListFor(model => model.Filter.LeaguesSelected, null)
 		@Html.JquerySelectableListFor(model => model.Filter.RacesSelected, null)
 		@Html.JquerySelectableListFor(model => model.Filter.AgainstsSelected, null)
 		@Html.JquerySelectableListFor(model => model.Filter.CastersSelected, null)
 
-		<a id="filterlink" href="#">Filtrer</a>
+		<a id="filterlink" href="#">Go !</a>
 	</div>
 	<h4>Recherche</h4>
 	@Html.TextBoxFor(model => model.Filter.SearchText, new { @class = "searchbox" })
@@ -65,27 +66,31 @@ else
 			if (headerLi.find("span").length == 0)
 				headerLi.append("<span class='ui-icon ui-icon-circle-close'></span>").find("span").hide().fadeIn(150);
 		}
-		var onLeagueSelected = function (event, ui) { onFilterSelected(event, ui, 0); };
-		var onRaceSelected = function (event, ui) { onFilterSelected(event, ui, 1); };
-		var onAgainstSelected = function (event, ui) { onFilterSelected(event, ui, 2); };
-		var onCasterSelected = function (event, ui) { onFilterSelected(event, ui, 3); };
+		var onVideoTypeSelected = function(event, ui) {onFilterSelected(event, ui, 0); };
+		var onLeagueSelected = function (event, ui) { onFilterSelected(event, ui, 1); };
+		var onRaceSelected = function (event, ui) { onFilterSelected(event, ui, 2); };
+		var onAgainstSelected = function (event, ui) { onFilterSelected(event, ui, 3); };
+		var onCasterSelected = function (event, ui) { onFilterSelected(event, ui, 4); };
 
 
+		@Html.JqueryCodeForList(model => model.Filter.VideoTypeSelected, "onVideoTypeSelected")
 		@Html.JqueryCodeForList(model => model.Filter.LeaguesSelected, "onLeagueSelected")
 		@Html.JqueryCodeForList(model => model.Filter.RacesSelected, "onRaceSelected")
 		@Html.JqueryCodeForList(model => model.Filter.AgainstsSelected, "onAgainstSelected")
 		@Html.JqueryCodeForList(model => model.Filter.CastersSelected, "onCasterSelected")
 
 		$(function () {
-			filters[0] = extractSelectedTokens($("#LeaguesSelected"));
+			filters[0] = extractSelectedTokens($("#VideoTypeSelected"));
+			addCloseLinkMaybe("#VideoTypeSelected");
+			filters[1] = extractSelectedTokens($("#LeaguesSelected"));
 			addCloseLinkMaybe("#LeaguesSelected");
-			filters[1] = extractSelectedTokens($("#RacesSelected"));
+			filters[2] = extractSelectedTokens($("#RacesSelected"));
 			addCloseLinkMaybe("#RacesSelected");
-			filters[2] = extractSelectedTokens($("#AgainstsSelected"));
+			filters[3] = extractSelectedTokens($("#AgainstsSelected"));
 			addCloseLinkMaybe("#AgainstsSelected");
-			filters[3] = extractSelectedTokens($("#CastersSelected"));
+			filters[4] = extractSelectedTokens($("#CastersSelected"));
 			addCloseLinkMaybe("#CastersSelected");
-			filters[4] = $("#Filter_SearchText").val();
+			filters[5] = $("#Filter_SearchText").val();
 			processFilterLink();
 
 			$("li.header").click(function () {
@@ -94,7 +99,7 @@ else
 				processFilterLink();
 			});
 			$("#Filter_SearchText").keyup(function () {
-				filters[4] = encodeURI($(this).val());
+				filters[5] = encodeURI($(this).val());
 				processFilterLink();
 			});
 
@@ -111,9 +116,6 @@ else
 			function () {
 				$(this).stop(true, true).animate({ borderColor: "#1F3138" }, 150);
 			});
-
-
-
 
 			$("#masonryContainer").masonry({
 				itemSelector: '.item'
